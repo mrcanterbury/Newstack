@@ -1,0 +1,40 @@
+// Fonts
+$sans: 'Open Sans', sans-serif;
+$mono: 'Fira Code', monospace;
+// Font Sizes
+$logo:2em;
+$small:.75em;
+$regular:1em;
+$medium:1.25em;
+$large:1.5em;
+$xl:3em;
+$xxl:4em;
+$xxxl:5em;
+//Font Weights
+$thin:300;
+$regular:400;
+$semibold:600;
+$bold:800;
+// Colors
+$primary-color: #FFF;
+$secondary-color: #00FFC2;
+$offwhite:#F1F1F1;
+$black: #222222;
+$gray: #666666;
+$light-gray: #cccccc;
+$dark-gray: #333333;
+$red: #F24E1E;
+$green: #0FA958;
+$blue: #00A3FF;
+$purple: #A02B98;
+$background: #3C535C;
+// Gradients
+$hero-gradient-start:#3C535C;
+$hero-gradient-end:rgb(227, 78, 250, .3);
+$action-gradient-start:rgba(255, 0, 242, 0.6);
+$action-gradient-end:rgba(0, 255, 242, 0.6);
+// Corners
+$radius:5px;
+@mixin rounded {
+    border-radius: $radius;
+}

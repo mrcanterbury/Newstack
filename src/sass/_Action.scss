@@ -1,0 +1,56 @@
+@use "utility";
+@use "components";
+
+.action-container {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: utility.$black;
+}
+
+.action-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+}
+
+.action-text {
+    color: utility.$light-gray;
+    font-size: utility.$medium;
+    font-weight: utility.$semibold;
+    max-width: 30rem;
+}
+
+.view-docs {
+    @include components.main-btn;
+    color:utility.$primary-color;
+    background: utility.$purple;
+    width: 100%;
+}
+
+.view-docs:hover {
+    background: lighten(utility.$purple, 10%);
+}
+
+.action-img {
+    width: 10rem;
+}
+
+@media (max-width:800px) {
+
+    .action-container {
+        padding: 3rem 0;
+        display: block;
+        text-align: center;
+    }
+
+    .action-img {
+        width: 10rem;
+        padding-bottom: 1em;
+    }
+}

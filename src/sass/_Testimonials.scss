@@ -1,0 +1,86 @@
+@use 'utility';
+@use "components";
+
+.testimonial-container {
+    padding: 5rem 12rem;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:3rem;
+}
+
+.testimonial-card {
+    @include components.testimonial-card;
+}
+
+.testimonial-card-span-down {
+    @include components.testimonial-card;
+    grid-row: 1/3;
+}
+
+.testimonial-card-span-right {
+    @include components.testimonial-card;
+    grid-column: 2/4;
+}
+
+.testimonial-card-header {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.test-card-header-img {
+    padding:0;
+}
+
+.test-card-header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.test-card-title {
+    font-size: utility.$regular;
+    font-weight: utility.$semibold;
+    color: utility.$background;
+}
+
+.test-card-subtitle {
+    font-size: utility.$small;
+    color: utility.$gray;
+}
+
+.test-card-body {
+    padding: .5em;
+    font-size: utility.$regular;
+    color: utility.$gray;
+    text-align: left;
+    line-height: 1.8em;
+}
+
+@media (max-width:1400px) {
+    
+    .testimonial-container {
+        margin-top: 2rem;
+        padding: 1em;
+    }
+
+    .testimonial-grid {
+        display: block;
+    }
+
+    .testimonial-card {
+        @include components.testimonial-card-mobile;
+    }
+    
+    .testimonial-card-span-down {
+        @include components.testimonial-card-mobile;
+        
+    }
+    
+    .testimonial-card-span-right {
+        @include components.testimonial-card-mobile;
+        
+    }
+}

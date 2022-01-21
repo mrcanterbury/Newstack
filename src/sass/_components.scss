@@ -1,0 +1,84 @@
+@use 'utility';
+
+// Main Button
+@mixin main-btn {
+    @include utility.rounded;
+    padding: 1em 2em;
+    font-size: utility.$medium;
+    font-weight: utility.$semibold;
+    color: utility.$black;
+    border-style: none;
+    border-radius: utility.$radius;
+    cursor: pointer;
+}
+
+// Pricing Button
+@mixin price-btn {
+    @include utility.rounded;
+    margin-top: 2rem;
+    padding: .5em 4em;
+    font-size: utility.$large;
+    font-weight: utility.$semibold;
+    text-transform: uppercase;
+    color: utility.$primary-color;
+    border-style: none;
+    border-radius: utility.$radius;
+    cursor: pointer;
+}
+
+// Pricing Card
+@mixin price-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem 1rem;
+    color: utility.$black;
+    background-color: utility.$primary-color;
+    width: 30rem;
+    border-style: none;
+    border-radius: 15px;
+    margin-bottom: 5rem;
+    box-shadow: 0 0 20px rgb(204, 204, 204, .5);
+    -webkit-box-shadow: 0 0 20px rgb(204, 204, 204, .5);
+    -moz-box-shadow: 0 0 20px rgb(204, 204, 204, .5);
+}
+
+@mixin price-card-header {
+    font-size: utility.$xl;
+    font-weight: utility.$semibold;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+// Testimonial Card
+@mixin testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    padding: 1rem;
+    color: utility.$dark-gray;
+    background-color: utility.$primary-color;
+    border-style: none;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(35, 50, 56, 1);
+    -webkit-box-shadow: 0 0 20px rgb(35, 50, 56, 1);
+    -moz-box-shadow: 0 0 20px rgb(35, 50, 56, 1);
+}
+
+@mixin testimonial-card-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    padding: 1rem;
+    color: utility.$dark-gray;
+    background-color: utility.$primary-color;
+    border-style: none;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(35, 50, 56, 1);
+    -webkit-box-shadow: 0 0 20px rgb(35, 50, 56, 1);
+    -moz-box-shadow: 0 0 20px rgb(35, 50, 56, 1);
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,43 @@
+@use 'utility';
+@use 'components';
+@import 'Action';
+@import 'Footer';
+@import 'Hero';
+@import 'Navbar';
+@import 'Pricing';
+@import 'Testimonials';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: utility.$sans;
+    font-size: utility.$regular;
+}
+
+body {
+    background-color: utility.$background;
+    color: utility.$primary-color;
+}
+
+h1 {
+    font-size: utility.$xxl;
+    font-weight: utility.$bold;
+}
+
+h1.Pricing {
+    font-size: utility.$xxl;
+    font-weight: utility.$bold;
+    color: utility.$background;
+}
+
+h3 {
+    font-size: utility.$medium;
+    font-weight: utility.$regular;
+    color: utility.$gray;
+}
+
+h4 {
+    font-size: utility.$medium;
+    font-weight: utility.$semibold;
+}

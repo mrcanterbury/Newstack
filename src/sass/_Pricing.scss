@@ -1,0 +1,190 @@
+@use 'utility';
+@use "components";
+
+
+.pricing-container {
+    background-color: utility.$offwhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pricing-header {
+    margin-top: 5rem;
+    text-align: center;
+     div {
+         padding: .25em;
+     }
+}
+
+.pricing-card-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-around;
+}
+
+.card-basic {
+    @include components.price-card;
+}
+
+.basic-header {
+    @include components.price-card-header;
+    color: utility.$dark-gray;
+}
+
+.card-standard {
+    @include components.price-card;
+}
+
+.standard-header {
+    @include components.price-card-header;
+    color: utility.$blue;
+}
+
+.card-pro {
+    @include components.price-card;
+}
+
+.pro-header {
+    @include components.price-card-header;
+    color: utility.$purple;
+}
+
+.price-display {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: .5em;
+}
+
+h1.price-tag-lg {
+    color: utility.$gray;
+    font-size: utility.$xxxl;
+}
+
+h5.price-tag-sm {
+    color: utility.$gray;
+    font-size: utility.$large;
+}
+
+.fineprint {
+    margin-top: 2rem;
+    font-size: utility.$small;
+    font-weight: utility.$semibold;
+    color: utility.$gray;
+}
+
+ul {
+    margin-top: 2rem;
+}
+
+li {
+    font-size: utility.$large;
+    color: utility.$gray;
+    padding: .25em;
+}
+
+li.included {
+    list-style-image: url(../img/bullet-check.svg);
+}
+
+li.excluded {
+    list-style-image: url(../img/bullet-x.svg);
+}
+
+.basic-buy-now {
+    @include components.price-btn;
+    background: utility.$dark-gray;
+}
+
+.basic-buy-now:hover {
+    @include components.price-btn;
+    background: lighten(utility.$dark-gray, 10%);
+}
+
+.standard-buy-now {
+    @include components.price-btn;
+    background: utility.$blue;
+}
+
+.standard-buy-now:hover {
+    @include components.price-btn;
+    background: darken(utility.$blue, 10%);
+}
+
+.pro-buy-now {
+    @include components.price-btn;
+    background: utility.$purple;
+}
+
+.pro-buy-now:hover {
+    @include components.price-btn;
+    background: lighten(utility.$purple, 10%);
+}
+
+@media (max-width:1400px) {
+    .pricing-container {
+        padding-top: .5rem;
+        display: block;
+    }
+
+    .pricing-header {
+        margin-top: 5rem;
+        text-align: center;
+        font-size: utility.$small;
+         div {
+             padding: 1em;
+         }
+    }
+
+    .pricing-card-container {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-basic {
+        @include components.price-card;
+        width: auto;
+        padding: 1.5rem;
+    }
+    
+    .basic-header {
+        @include components.price-card-header;
+        color: utility.$dark-gray;
+    }
+    
+    .card-standard {
+        @include components.price-card;
+        width: auto;
+        padding: 1.5rem;
+    }
+    
+    .standard-header {
+        @include components.price-card-header;
+        color: utility.$blue;
+    }
+    
+    .card-pro {
+        @include components.price-card;
+        width: auto;
+        padding: 1.5rem;
+    }
+    
+    .pro-header {
+        @include components.price-card-header;
+        color: utility.$purple;
+    }
+
+    li {
+        font-size: utility.$medium;
+        color: utility.$gray;
+        padding: .5em;
+    }
+    
+
+}

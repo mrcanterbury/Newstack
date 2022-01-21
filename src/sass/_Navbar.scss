@@ -1,0 +1,137 @@
+@use 'utility';
+@use 'components';
+
+.navbar {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    height: 50px;
+    // overflow: hidden;
+}
+
+.logo-set {
+    margin-left: 2rem;
+    display: flex;
+    gap:.5em;
+}
+
+.logo {
+    text-decoration: none;
+    color: utility.$primary-color;
+    font-size: utility.$logo;
+    font-weight: utility.$semibold;
+    margin-bottom: .1em;
+}
+
+.logo:hover {
+    color: utility.$primary-color;
+}
+
+#nav-menu {
+    margin-right: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: utility.$primary-color;
+    font-weight: utility.$regular;
+    font-size: utility.$medium;
+    padding: 1rem;
+}
+
+a:hover {
+    color: utility.$secondary-color;
+}
+
+.icon {
+    width: 30px;
+}
+
+.github-link {
+    width: 24px;
+    margin-bottom: -.25em;
+    opacity: 100%;
+}
+
+.github-link:hover {
+   opacity: 50%;
+}
+
+#nav-menu-button-open {
+    display: none;
+}
+
+#nav-menu-mobile {
+    display: none;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+@media (max-width:810px) {
+
+    .logo-set {
+        margin-left: .5rem;
+        align-self: center;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+
+    #nav-menu-button-open {
+        margin-top: .5em;
+        display: block;
+        // display: none;
+        width: 32px;
+        height: 32px;
+        background-color: utility.$background;
+        background-image: url(../img/mobile-open.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border:none;
+        cursor: pointer;
+    }
+
+    #nav-menu-button-close {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: darken(utility.$background, 10%);
+        background-image: url(../img/mobile-close.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border:none;
+        cursor: pointer;
+        align-self: flex-end;
+    }
+    
+    #nav-menu-mobile {
+        display: none; // display:block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 1em;
+        background-color: darken(utility.$background, 10%);
+    }
+
+    .nav-links-mobile {
+        display:flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+}
+
+@media (max-width:690px) {
+
+    .search-container {
+        display: none;
+    }
+    
+}

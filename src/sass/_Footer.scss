@@ -1,0 +1,140 @@
+@use 'utility';
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    background-color: utility.$black;
+    color: utility.$primary-color;
+    padding: 5rem;
+}
+
+.footer-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:10rem;
+}
+
+.footer-logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+}
+
+.footer-links {
+    padding:0;
+    align-content: top;
+
+        ul {
+            margin:0;
+            list-style: none;
+        }
+
+        li {
+            font-size: utility.$medium;
+            color: utility.$light-gray;
+        }
+
+        .footer-link-header {
+            font-weight: utility.$semibold;
+            color: utility.$primary-color;
+        }
+
+        a {
+            text-decoration: none;
+            color: darken(utility.$primary-color, 50%);
+        }
+   
+        a:hover {
+            text-decoration: none;
+            color: utility.$primary-color;
+        }
+    
+}
+
+.footer-social-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+        img {
+            width: 50px;
+        }
+}
+
+.footer-icon {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.footer-icon:hover {
+    opacity: 100%;
+}
+
+.top-container {
+    align-self: center;
+}
+
+.top-btn {
+    background-color: utility.$black;
+    border: none;
+    opacity: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.top-btn:hover {
+   opacity: 100%;
+}
+
+.footer-copy {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@media (max-width:1400px) {
+    
+    .footer-container {
+        padding: 3rem;
+    }
+
+    .footer-links-container {
+        display: block;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+    .footer-logo-container {
+        display: inline-block;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    .footer-logo {
+        display: flex;
+        flex-direction: row;
+        gap: .5em;
+    }
+    
+    .footer-links {
+        padding: 2rem 0;     
+    }
+
+    .footer-social-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;    
+        gap: 1em;
+    
+            img {
+                width: 50px;
+            }
+    }
+}
