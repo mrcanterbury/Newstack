@@ -18,7 +18,7 @@
 
 .action-text {
   color: #cccccc;
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: 600;
   max-width: 30rem;
 }
@@ -26,7 +26,7 @@
 .view-docs {
   border-radius: 5px;
   padding: 1em 2em;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 600;
   color: #222222;
   border-style: none;
@@ -94,7 +94,7 @@
   list-style: none;
 }
 .footer-links li {
-  font-size: 1.25em;
+  font-size: 1em;
   color: #cccccc;
 }
 .footer-links .footer-link-header {
@@ -222,7 +222,7 @@
 .sign-up {
   border-radius: 5px;
   padding: 1em 2em;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 600;
   color: #222222;
   border-style: none;
@@ -239,7 +239,7 @@
 .learn-more {
   border-radius: 5px;
   padding: 1em 2em;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 600;
   color: #222222;
   border-style: none;
@@ -280,7 +280,7 @@
   }
 
   .hero-title {
-    font-size: 0.75em;
+    font-size: 0.65em;
     max-width: 90%;
   }
 
@@ -348,7 +348,7 @@
   text-decoration: none;
   color: #FFF;
   font-weight: 400;
-  font-size: 1.25em;
+  font-size: 1em;
   padding: 1rem;
 }
 
@@ -556,7 +556,7 @@ h5.price-tag-sm {
 
 .fineprint {
   margin-top: 2rem;
-  font-size: 0.75em;
+  font-size: 0.65em;
   font-weight: 600;
   color: #666666;
 }
@@ -672,7 +672,7 @@ li.excluded {
   .pricing-header {
     margin-top: 5rem;
     text-align: center;
-    font-size: 0.75em;
+    font-size: 0.65em;
   }
   .pricing-header div {
     padding: 1em;
@@ -767,7 +767,7 @@ li.excluded {
   }
 
   li {
-    font-size: 1.25em;
+    font-size: 1em;
     color: #666666;
     padding: 0.5em;
   }
@@ -851,7 +851,7 @@ li.excluded {
 }
 
 .test-card-subtitle {
-  font-size: 0.75em;
+  font-size: 0.65em;
   color: #666666;
 }
 
@@ -922,20 +922,70 @@ li.excluded {
   }
 }
 .docs-main-container {
+  margin-top: 10rem;
+  padding: 1rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .docs-navigation {
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #32454d;
+}
+.docs-navigation ul {
+  padding-left: 1rem;
+  list-style-type: none;
+}
+.docs-navigation ul li {
+  font-size: 400;
+  font-weight: 300;
+  color: #FFF;
+  list-style: none;
+  background-image: url(../img/doc-tick.svg);
+  background-position: left, center;
+  background-repeat: no-repeat;
+  line-height: 1.5em;
+  padding: 0 1rem;
+}
+.docs-navigation ul li a, .docs-navigation ul li a:visited {
+  text-decoration: none;
+  color: #cccccc;
+}
+.docs-navigation ul li a:hover, .docs-navigation ul li a:active {
+  text-decoration: none;
+  color: #00FFC2;
+}
+
+.doc-nav-header {
+  font-size: 1.5em;
+  font-weight: 1em;
+  color: #FFF;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+hr {
+  color: #3C535C;
+  border: none;
+  margin: 1.2rem;
+}
+
+.docs-image {
+  margin: 2rem;
 }
 
 .docs-content {
   display: flex;
   flex-direction: column;
-  max-width: 40%;
+  padding: 1rem;
 }
 
 * {
@@ -968,13 +1018,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 400;
   color: #666666;
 }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 600;
 }
 

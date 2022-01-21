@@ -2,18 +2,75 @@
 @use 'components';
 
 .docs-main-container {
+    margin-top: 10rem;
+    padding:1rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .docs-navigation {
+    @include utility.rounded;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+    border-style: none;
+    border-radius: utility.$radius;
+    background-color: darken(utility.$background, 5%);
+
+    ul {
+        padding-left: 1rem;
+        list-style-type: none;
+    
+        li {
+            font-size: utility.$regular;
+            font-weight: utility.$thin;
+            color: utility.$primary-color;
+            list-style: none;
+            background-image: url(../img/doc-tick.svg);
+            background-position: left, center;
+            background-repeat: no-repeat;
+            line-height: 1.5em;
+            padding: 0 1rem;
+        
+                a, a:visited {
+                    text-decoration: none;
+                    color: darken(utility.$primary-color, 20%);
+                }
+                
+                a:hover, a:active {
+                    text-decoration: none;
+                    color: utility.$secondary-color;
+                }
+            }
+      }
+
 }
+
+.doc-nav-header {
+    font-size: utility.$large;
+    font-weight: utility.$medium;
+    color: utility.$primary-color;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+hr {
+    color:utility.$background;
+    border:none;
+    margin: 1.2rem;
+}
+
+.docs-image {
+    margin: 2rem;
+}
+
+
 
 .docs-content {
     display: flex;
     flex-direction: column;
-    max-width: 40%;
+    padding: 1rem;
 }

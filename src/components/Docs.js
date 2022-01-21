@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import action from '../img/action.svg'
+
 
 function Docs() {
   return (
@@ -5,39 +8,44 @@ function Docs() {
       <div className="docs-main-container">
 
           <div className="docs-navigation">
-            <ul>
-              <li className="doc-nav-header">
-                Navigation
-              </li>
-              <li>Installation</li>
-              <li>Custom Domains</li>
-              <li>Functions</li>
-              <li>Testing</li>
-              <li>Applications</li>
-              <li>Surface Groups</li>
-              <li>Purpose Methods</li>
-            </ul>
 
-            <ul>
-              <li className="doc-nav-header">
-                Resources
-              </li>
-              <li>Overview</li>
-              <li>Preferences</li>
-              <li>Actions</li>
-              <li>Sizing Methods</li>
-            </ul>
+            <div>
+              <ul>
+                <span className="doc-nav-header">
+                  Navigation
+                </span>
+                <li><Link to="/">Installation</Link></li>
+                <li><Link to="/">Custom Domains</Link></li>
+                <li><Link to="/">Functions</Link></li>
+                <li><Link to="/">Testing</Link></li>
+                <li><Link to="/">Applications</Link></li>
+                <li><Link to="/">Surface Groups</Link></li>
+                <li><Link to="/">Purpose Methods</Link></li>
+                <hr />
+                <span className="doc-nav-header">
+                  Resources
+                </span>
+                <li><Link to="/">Overview</Link></li>
+                <li><Link to="/">Preferences</Link></li>
+                <li><Link to="/">Actions</Link></li>
+                <li><Link to="/">Sizing Methods</Link></li>
+                <hr />
+                <span className="doc-nav-header">
+                  Advanced
+                </span>
+                <li><Link to="/">Networking</Link></li>
+                <li><Link to="/">API Tokens</Link></li>
+                <li><Link to="/">GraphQL</Link></li>
+                <li><Link to="/">Onboarding</Link></li>
+              </ul>
+            </div>
 
-            <ul>
-              <li className="doc-nav-header">
-                Advanced
-              </li>
-              <li>Networking</li>
-              <li>API Tokens</li>
-              <li>GraphQL</li>
-              <li>Onboarding</li>
-            </ul>
+            <div className="docs-image">
+              <img src={action} alt="Documentation" />
+            </div>
+
           </div>
+
 
           <div className="docs-content">
 
