@@ -1,6 +1,7 @@
 import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './styles/main.css';
+import ScrollToTop from "./components/ScrollToTop";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -12,6 +13,7 @@ import Contact from './components/Contact';
 const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
+    <ScrollToTop />
     <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />

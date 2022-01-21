@@ -921,6 +921,23 @@ li.excluded {
     margin-bottom: 2rem;
   }
 }
+.docs-main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.docs-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.docs-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -943,6 +960,11 @@ h1.Pricing {
   font-size: 4em;
   font-weight: 800;
   color: #3C535C;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 600;
 }
 
 h3 {

@@ -6,6 +6,7 @@
 @import 'Navbar';
 @import 'Pricing';
 @import 'Testimonials';
+@import 'Docs';
 
 * {
     margin: 0;
@@ -29,6 +30,11 @@ h1.Pricing {
     font-size: utility.$xxl;
     font-weight: utility.$bold;
     color: utility.$background;
+}
+
+h2 {
+    font-size: utility.$xl;
+    font-weight: utility.$semibold;
 }
 
 h3 {
