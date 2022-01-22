@@ -11,20 +11,12 @@ window.onscroll = () => {
     codeTopBtn.style.display = "block";
   } else {
     codeTopBtn.style.display = "none";
-  }
-}
+  };
+};
 
 function Docs() {
   return (
     <div>
-      <div className="docs-header-container">
-       <div className="docs-image">
-              <img src={action} alt="Documentation" />
-        </div>
-          <div className="docs-content-header">
-            <h2 className="docs-content-header-title">Documentation</h2>
-          </div>
-      </div>
       <div className="docs-main-container">
         <button id="code-top-btn" title="Go to Top" onClick={toTop}><img src={codetop} alt="To Top"/></button>
           <div className="docs-navigation">
@@ -63,9 +55,22 @@ function Docs() {
             </div>
           </div>
           <div className="docs-content">
+          <div className="docs-header-container">
+       <div className="docs-image">
+              <img src={action} alt="Documentation" />
+        </div>
+          <div className="docs-content-header">
+            <h2 className="docs-content-header-title">Getting Started</h2>
+          </div>
+      </div>
+          <div class="docs-content-module">
+              <span className="docs-content-first">
+              Copy the installation package and initialize in the terminal.
+              </span>
+            </div>
             <hr id="installation"/>
             <div class="docs-content-module">
-              <h3 className="docs-content-module-title">Installation</h3>
+              <h3 className="docs-content-module-title">1. Installation</h3>
               <span className="docs-content-header-subtext">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
               </span>
@@ -81,7 +86,7 @@ function Docs() {
             </div>
             <hr id="domains"/>
             <div class="docs-content-module">
-              <h3 className="docs-content-module-title">Domains</h3>
+              <h3 className="docs-content-module-title">2. Domains</h3>
               <span className="docs-content-header-subtext">
                 lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus,
                 consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.  
@@ -98,7 +103,7 @@ function Docs() {
             </div>
             <hr id="functions"/>
             <div class="docs-content-module">
-              <h3 className="docs-content-module-title">Functions</h3>
+              <h3 className="docs-content-module-title">3. Functions</h3>
               <span className="docs-content-header-subtext">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
               </span>
@@ -114,7 +119,7 @@ function Docs() {
             </div>
             <hr id="testing"/>
             <div class="docs-content-module">
-              <h3 className="docs-content-module-title">Testing</h3>
+              <h3 className="docs-content-module-title">4. Testing</h3>
               <span className="docs-content-header-subtext">
                 lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus,
                 consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.  
@@ -131,7 +136,7 @@ function Docs() {
             </div>
             <hr id="applications"/>
             <div class="docs-content-module">
-              <h3 className="docs-content-module-title">Applications</h3>
+              <h3 className="docs-content-module-title">5. Applications</h3>
               <span className="docs-content-header-subtext">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
               </span>
@@ -147,7 +152,7 @@ function Docs() {
             </div>
             <hr id="grouping"/>
             <div class="docs-content-module">
-              <h3 className="docs-content-module-title">Grouping</h3>
+              <h3 className="docs-content-module-title">6. Grouping</h3>
               <span className="docs-content-header-subtext">
                 lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus,
                 consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.  
@@ -164,7 +169,7 @@ function Docs() {
             </div>
             <hr id="methods"/>
             <div class="docs-content-module">
-              <h3 className="docs-content-module-title">Methods</h3>
+              <h3 className="docs-content-module-title">7. Methods</h3>
               <span className="docs-content-header-subtext">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
               </span>
@@ -180,7 +185,7 @@ function Docs() {
             </div>
             <hr id="overview"/>
             <div class="docs-content-module">
-              <h3 className="docs-content-module-title">Overview</h3>
+              <h3 className="docs-content-module-title">8. Overview</h3>
               <span className="docs-content-header-subtext">
                 lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus,
                 consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.  
@@ -197,7 +202,7 @@ function Docs() {
             </div>
             <hr id="preferences"/>
             <div class="docs-content-module">
-              <h3 className="docs-content-module-title">Preferences</h3>
+              <h3 className="docs-content-module-title">9. Preferences</h3>
               <span className="docs-content-header-subtext">
                 lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus,
                 consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.  
@@ -214,7 +219,7 @@ function Docs() {
             </div>
             <hr id="actions"/>
             <div class="docs-content-module">
-              <h3 className="docs-content-module-title">Actions</h3>
+              <h3 className="docs-content-module-title">10. Actions</h3>
               <span className="docs-content-header-subtext">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
               </span>
@@ -230,7 +235,7 @@ function Docs() {
             </div>
             <hr id="sizing"/>
             <div class="docs-content-module">
-              <h3 className="docs-content-module-title">Sizing</h3>
+              <h3 className="docs-content-module-title">11. Sizing</h3>
               <span className="docs-content-header-subtext">
                 lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus,
                 consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.  
@@ -247,7 +252,7 @@ function Docs() {
             </div>
             <hr id="networking"/>
             <div class="docs-content-module">
-              <h3 className="docs-content-module-title">Networking</h3>
+              <h3 className="docs-content-module-title">12. Networking</h3>
               <span className="docs-content-header-subtext">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
               </span>
@@ -263,7 +268,7 @@ function Docs() {
             </div>
             <hr id="api"/>
             <div class="docs-content-module">
-              <h3 className="docs-content-module-title">API Tokens</h3>
+              <h3 className="docs-content-module-title">13. API Tokens</h3>
               <span className="docs-content-header-subtext">
                 lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus,
                 consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.  
@@ -280,7 +285,7 @@ function Docs() {
             </div>
             <hr id="graphql"/>
             <div class="docs-content-module">
-              <h3 className="docs-content-module-title">GraphQL</h3>
+              <h3 className="docs-content-module-title">14. GraphQL</h3>
               <span className="docs-content-header-subtext">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
               </span>
@@ -296,7 +301,7 @@ function Docs() {
             </div>
             <hr id="onboarding"/>
             <div class="docs-content-module">
-              <h3 className="docs-content-module-title">Onboarding</h3>
+              <h3 className="docs-content-module-title">15. Onboarding</h3>
               <span className="docs-content-header-subtext">
                 lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus,
                 consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.  
@@ -315,6 +320,6 @@ function Docs() {
       </div>
     </div>
   );
-}
+};
 
 export default Docs;

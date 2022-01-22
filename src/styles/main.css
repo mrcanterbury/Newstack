@@ -440,7 +440,7 @@ a:hover {
   text-align: center;
 }
 
-h1.Pricing {
+h1.pricing {
   font-size: 4em;
   font-weight: 800;
   color: #3C535C;
@@ -908,13 +908,18 @@ li.excluded {
 }
 .docs-header-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  padding-top: 10rem;
+  gap: 1rem;
+  padding-top: 3rem;
 }
 
 .docs-image {
-  padding: 1rem;
+  padding: 0;
+}
+.docs-image img {
+  width: 60px;
 }
 
 .docs-content-header {
@@ -925,6 +930,10 @@ li.excluded {
 .docs-content-header-title {
   font-size: 3em;
   font-weight: 600;
+}
+
+.docs-content-first {
+  text-align: center;
 }
 
 .docs-content-header-subtext {
@@ -946,14 +955,13 @@ li.excluded {
   flex-direction: column;
   align-items: center;
   padding: 1rem 3rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   border-style: none;
   background-color: #32454d;
   height: fit-content;
 }
 .docs-navigation ul {
   padding-left: 1rem;
-  list-style-type: none;
 }
 .docs-navigation ul li {
   color: #FFFFFF;
@@ -969,7 +977,7 @@ li.excluded {
   font-size: 0.75em;
   font-weight: 300;
   text-decoration: none;
-  color: #cccccc;
+  color: #FFFFFF;
 }
 .docs-navigation ul li a:hover, .docs-navigation ul li a:active {
   text-decoration: none;
@@ -1006,7 +1014,7 @@ hr {
 .docs-content-module-title {
   font-size: 1.5em;
   font-weight: 600;
-  color: #00FFC2;
+  color: #0FA958;
 }
 
 .code-body {
@@ -1048,7 +1056,7 @@ hr {
   border-style: none;
   border-radius: 50%;
   position: fixed;
-  bottom: 50%;
+  bottom: 25%;
   right: 10%;
   z-index: 99;
   opacity: 50%;
@@ -1094,7 +1102,8 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#3C535C, rgba(227, 78, 250, 0.25));
+  background-color: #3C535C;
+  min-height: 100vh;
 }
 
 .contact-main-header {
@@ -1175,11 +1184,12 @@ hr {
 #firstName, #lastName, #userEmail, #userMessage {
   width: 100%;
   border-style: none;
-  border-bottom: 2px solid #666666;
+  border-bottom: 1px solid #666666;
   color: #333333;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 300;
   resize: none;
+  padding: 0.5em;
 }
 
 .contact-form-btn-container {

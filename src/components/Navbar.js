@@ -9,7 +9,7 @@ const navOpen = () => { document.getElementById('nav-menu-mobile').style.display
 window.addEventListener('mouseup', function(e) {
     if (e.target !== document.querySelector("nav-links-mobile")) {
         document.getElementById('nav-menu-mobile').style.display = 'none';
-    }
+    };
 });
 
 function Navbar() {
@@ -38,7 +38,7 @@ function Navbar() {
             </div>
             <button id="nav-menu-button-open" title="Mobile Menu" onClick={navOpen}><img className="icon" src={mobilemenu} alt="Mobile Menu"/></button>
         </div>
-    )
+    );
 };
 
-export default Navbar
+export default Navbar;

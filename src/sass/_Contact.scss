@@ -7,7 +7,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(utility.$hero-gradient-start, utility.$hero-gradient-end);
+    background-color:utility.$background;
+    min-height: 100vh;
 }
 
 .contact-main-header {
@@ -89,11 +90,12 @@
 #firstName, #lastName, #userEmail, #userMessage {
     width: 100%;
     border-style: none;
-    border-bottom: 2px solid utility.$gray;
+    border-bottom: 1px solid utility.$gray;
     color: utility.$dark-gray;
     font-size: utility.$medium;
-    font-weight: utility.$regular;
+    font-weight: utility.$thin;
     resize: none;
+    padding: .5em;
 }
 
 .contact-form-btn-container {
