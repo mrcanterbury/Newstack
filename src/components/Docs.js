@@ -62,7 +62,6 @@ function Docs() {
               <h2 className="docs-content-header-title">Welcome to Newstack</h2>
               <span className="docs-content-header-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
               </span>
             </div>
             <hr id="installation"/>
