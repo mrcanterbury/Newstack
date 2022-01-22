@@ -23,14 +23,8 @@ body {
 }
 
 h1 {
-    font-size: utility.$xxl;
+    font-size: utility.$xxxl;
     font-weight: utility.$bold;
-}
-
-h1.Pricing {
-    font-size: utility.$xxl;
-    font-weight: utility.$bold;
-    color: utility.$background;
 }
 
 h2 {
@@ -40,11 +34,11 @@ h2 {
 
 h3 {
     font-size: utility.$medium;
-    font-weight: utility.$regular;
+    font-weight: utility.$semibold;
     color: utility.$gray;
 }
 
 h4 {
-    font-size: utility.$medium;
+    font-size: utility.$large;
     font-weight: utility.$semibold;
 }

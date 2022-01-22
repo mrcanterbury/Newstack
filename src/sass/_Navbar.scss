@@ -116,7 +116,8 @@ a:hover {
         position: fixed;
         top: 0;
         right: 0;
-        padding: 1em;
+        width: 200px;
+        padding: 1rem 1rem;
         background-color: darken(utility.$background, 10%);
     }
 
@@ -124,14 +125,6 @@ a:hover {
         display:flex;
         flex-direction: column;
         position: relative;
-    }
-    
-}
-
-@media (max-width:690px) {
-
-    .search-container {
-        display: none;
     }
     
 }

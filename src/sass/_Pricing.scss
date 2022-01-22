@@ -12,9 +12,12 @@
 .pricing-header {
     margin-top: 5rem;
     text-align: center;
-     div {
-         padding: .25em;
-     }
+}
+
+h1.Pricing {
+    font-size: utility.$xxxl;
+    font-weight: utility.$bold;
+    color: utility.$background;
 }
 
 .pricing-card-container {
@@ -134,7 +137,6 @@ li.excluded {
     .pricing-header {
         margin-top: 5rem;
         text-align: center;
-        font-size: utility.$small;
          div {
              padding: 1em;
          }

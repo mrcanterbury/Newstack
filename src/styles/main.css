@@ -420,7 +420,8 @@ a:hover {
     position: fixed;
     top: 0;
     right: 0;
-    padding: 1em;
+    width: 200px;
+    padding: 1rem 1rem;
     background-color: #28373d;
   }
 
@@ -428,11 +429,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     position: relative;
-  }
-}
-@media (max-width: 690px) {
-  .search-container {
-    display: none;
   }
 }
 .pricing-container {
@@ -446,8 +442,11 @@ a:hover {
   margin-top: 5rem;
   text-align: center;
 }
-.pricing-header div {
-  padding: 0.25em;
+
+h1.Pricing {
+  font-size: 4em;
+  font-weight: 800;
+  color: #3C535C;
 }
 
 .pricing-card-container {
@@ -476,7 +475,7 @@ a:hover {
 }
 
 .basic-header {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -501,7 +500,7 @@ a:hover {
 }
 
 .standard-header {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -526,7 +525,7 @@ a:hover {
 }
 
 .pro-header {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -543,7 +542,7 @@ a:hover {
 
 h1.price-tag-lg {
   color: #666666;
-  font-size: 5em;
+  font-size: 4em;
 }
 
 h5.price-tag-sm {
@@ -669,7 +668,6 @@ li.excluded {
   .pricing-header {
     margin-top: 5rem;
     text-align: center;
-    font-size: 0.75em;
   }
   .pricing-header div {
     padding: 1em;
@@ -707,7 +705,7 @@ li.excluded {
   }
 
   .basic-header {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -734,7 +732,7 @@ li.excluded {
   }
 
   .standard-header {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -761,7 +759,7 @@ li.excluded {
   }
 
   .pro-header {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -924,9 +922,18 @@ li.excluded {
   padding-top: 10rem;
 }
 
+.docs-image {
+  padding: 1rem;
+}
+
 .docs-content-header {
   text-align: center;
   max-width: 50%;
+}
+
+.docs-content-header-title {
+  font-size: 3em;
+  font-weight: 600;
 }
 
 .docs-content-header-subtext {
@@ -935,12 +942,11 @@ li.excluded {
 
 .docs-main-container {
   margin-top: 5rem;
-  margin-bottom: 2rem;
-  padding: 1rem;
+  margin-bottom: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 4rem;
+  gap: 5rem;
 }
 
 .docs-navigation {
@@ -948,9 +954,8 @@ li.excluded {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  padding: 0 3rem;
-  margin-bottom: 3rem;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
   border-style: none;
   background-color: #32454d;
   height: fit-content;
@@ -960,8 +965,6 @@ li.excluded {
   list-style-type: none;
 }
 .docs-navigation ul li {
-  font-size: 400;
-  font-weight: 300;
   color: #FFF;
   list-style: none;
   background-image: url(../img/doc-tick.svg);
@@ -972,6 +975,8 @@ li.excluded {
   cursor: pointer;
 }
 .docs-navigation ul li a, .docs-navigation ul li a:visited {
+  font-size: 0.75em;
+  font-weight: 300;
   text-decoration: none;
   color: #cccccc;
 }
@@ -982,26 +987,20 @@ li.excluded {
 
 .doc-nav-header {
   font-size: 1.5em;
-  font-weight: 1em;
+  font-weight: 400;
   color: #FFF;
-  text-transform: uppercase;
-  list-style: none;
 }
 
 hr {
   color: #3C535C;
   border: none;
-  margin: 1.2rem;
-}
-
-.docs-image {
-  margin: 2rem 0;
+  margin: 1rem;
 }
 
 .docs-content {
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  gap: 1rem;
   max-width: 900px;
 }
 
@@ -1009,15 +1008,14 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 0.75rem;
-  padding: 0 1rem;
+  gap: 1rem;
+  padding: 0 2rem;
 }
 
 .docs-content-module-title {
   font-size: 1.5em;
   font-weight: 600;
   color: #00FFC2;
-  text-transform: uppercase;
 }
 
 .code-body {
@@ -1069,18 +1067,34 @@ hr {
   opacity: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 810px) {
   .docs-header-container {
-    padding: 5rem 1rem;
+    padding: 1rem;
+    padding-top: 10rem;
   }
 
   .docs-content-header {
     max-width: 100%;
   }
 
+  .docs-content-header-title {
+    font-size: 2rem;
+  }
+
   .docs-main-container {
-    margin-top: 1rem;
+    margin-top: 0;
     display: block;
+  }
+
+  .docs-navigation {
+    padding: 2rem;
+  }
+
+  .docs-content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    max-width: 100%;
   }
 }
 .contact-main-container {
@@ -1163,25 +1177,19 @@ h1 {
   font-weight: 800;
 }
 
-h1.Pricing {
-  font-size: 4em;
-  font-weight: 800;
-  color: #3C535C;
-}
-
 h2 {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 600;
 }
 
 h3 {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 600;
   color: #666666;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 600;
 }
 

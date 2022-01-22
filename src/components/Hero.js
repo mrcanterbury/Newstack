@@ -11,7 +11,7 @@ function Hero() {
                 </div>
                 <div className='hero-subtitle'>
                     <h4>Lorem ipsum dolor sit amet, consectetur <span className='highlight'>adipiscing</span> elit, consectetur adipiscing elit.
-                        Lorem <span className='highlight'>consectetur</span> ipsum dolor sit amet, adipiscing elit.</h4>
+                        Lorem <span className='highlight'>consectetur</span> ipsum dolor sit amet, adipiscing.</h4>
                 </div>
                 <div className='hero-button-container'>
                     <button className='sign-up'>Sign Up</button>

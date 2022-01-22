@@ -5,7 +5,6 @@ import codetop from '../img/code-top.svg';
 
 const toTop = () => { window.scrollTo({top: 0, behavior: 'smooth' });};
 
-
 window.onscroll = () => {
   var codeTopBtn = document.getElementById("code-top-btn");
   if (window.scrollY) {
@@ -19,11 +18,11 @@ function Docs() {
   return (
     <div>
       <div className="docs-header-container">
+       <div className="docs-image">
+              <img src={action} alt="Documentation" />
+        </div>
           <div className="docs-content-header">
             <h2 className="docs-content-header-title">Documentation</h2>
-            <span className="docs-content-header-subtext">
-              Here you can find all of the tools you'll need to deploy your web application with Newstack.
-            </span>
           </div>
       </div>
       <div className="docs-main-container">
@@ -61,9 +60,6 @@ function Docs() {
                 <li><Link to={"graphql"} spy={true} smooth={true}>GraphQL</Link></li>
                 <li><Link to={"onboarding"} spy={true} smooth={true}>Onboarding</Link></li>
               </ul>
-            </div>
-            <div className="docs-image">
-              <img src={action} alt="Documentation" />
             </div>
           </div>
           <div className="docs-content">
