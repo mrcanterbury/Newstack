@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../img/logo.svg';
-import githubNav from '../img/github-nav.svg'
+import githubnav from '../img/github-nav.svg';
+import mobilemenu from '../img/mobile-open.svg';
 
-function navOpen(){
-    document.getElementById('nav-menu-mobile').style.display = 'block';
-};
+const navOpen = () => { document.getElementById('nav-menu-mobile').style.display = 'block' };
 
 window.addEventListener('mouseup', function(e) {
     if (e.target !== document.querySelector("nav-links-mobile")) {
@@ -25,7 +24,7 @@ function Navbar() {
                     <Link to="/docs" className="nav-link">Documentation</Link>
                     <Link to="/blog" className="nav-link">Blog</Link>
                     <Link to="/contact" className="nav-link">Contact</Link>
-                    <a className="nav-link" href="http://www.github.com" target="_blank" rel="noopener noreferrer"><img className="github-link" src={githubNav} alt="Visit us on GitHub"/></a>
+                    <a className="nav-link" href="https://github.com/mrcanterbury/newstack" target="_blank" rel="noopener noreferrer"><img className="github-link" src={githubnav} alt="View Project on GitHub"/></a>
                 </div>
             </div>
             <div id="nav-menu-mobile">
@@ -34,10 +33,10 @@ function Navbar() {
                     <Link to="/docs" className="nav-link">Documentation</Link>
                     <Link to="/blog" className="nav-link">Blog</Link>
                     <Link to="/contact" className="nav-link">Contact</Link>
-                    <a className="nav-link" href="http://www.github.com" target="_blank" rel="noopener noreferrer"><img className="github-link" src={githubNav} alt="Visit us on GitHub"/></a>
+                    <a className="nav-link" href="https://github.com/mrcanterbury/newstack" target="_blank" rel="noopener noreferrer"><img className="github-link" src={githubnav} alt="View Project on GitHub"/></a>
                 </div>
             </div>
-            <button id="nav-menu-button-open" onClick={navOpen}></button>
+            <button id="nav-menu-button-open" title="Mobile Menu" onClick={navOpen}><img className="icon" src={mobilemenu} alt="Mobile Menu"/></button>
         </div>
     )
 };
