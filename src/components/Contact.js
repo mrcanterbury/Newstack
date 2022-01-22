@@ -54,9 +54,9 @@ function Contact() {
                     <span className="contact-title">Address</span>
                   </div>
                   <div>
-                    <span className="contact-info">1234 Blueberry Circle
+                    <span className="contact-info">1234 Downtown St
                     <br />
-                    Austin, TX 78751</span>
+                    Austin, TX 78701</span>
                   </div>
                 </div>
               </div>
@@ -64,7 +64,33 @@ function Contact() {
             </div>
 
             <div className="contact-form-container">
-              <h1>Form</h1>
+              <h4 className="form-header">Send a Message</h4>
+              
+                <form id= "userContact" action="none">
+                  <div className="form-field">
+                    <div>
+                      <input id="firstName" type="text" placeholder="First Name"/>
+                    </div>
+                    <div>
+                      <input id="lastName" type="text" placeholder="Last Name"/>
+                    </div>
+                    <div>
+                      <input id="userEmail" type="email" placeholder="Email"/>
+                    </div>
+                    <div>
+                      <textarea name="userMessage" id="userMessage" placeholder="Type your message..."></textarea>
+                    </div>
+                    <div className="contact-form-btn-container">
+                      <div>
+                        <button className="form-reset-btn">Reset</button>
+                      </div>
+                      <div>
+                        <button className="form-submit-btn">Send</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+          
             </div>
           </div>
 

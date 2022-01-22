@@ -16,7 +16,7 @@ $regular:400;
 $semibold:600;
 $bold:800;
 // Colors
-$primary-color: #FFF;
+$primary-color: #FFFFFF;
 $secondary-color: #00FFC2;
 $offwhite:#F1F1F1;
 $black: #222222;
@@ -30,9 +30,7 @@ $purple: #A02B98;
 $background: #3C535C;
 // Gradients
 $hero-gradient-start:#3C535C;
-$hero-gradient-end:rgb(227, 78, 250, .3);
-$action-gradient-start:rgba(255, 0, 242, 0.6);
-$action-gradient-end:rgba(0, 255, 242, 0.6);
+$hero-gradient-end:rgb(227, 78, 250, .25);
 // Corners
 $radius:5px;
 @mixin rounded {

@@ -8,7 +8,6 @@
     font-weight: utility.$semibold;
     color: utility.$black;
     border-style: none;
-    border-radius: utility.$radius;
     cursor: pointer;
 }
 
@@ -22,7 +21,6 @@
     text-transform: uppercase;
     color: utility.$primary-color;
     border-style: none;
-    border-radius: utility.$radius;
     cursor: pointer;
 }
 
@@ -81,4 +79,17 @@
     -webkit-box-shadow: 0 0 20px rgb(35, 50, 56, 1);
     -moz-box-shadow: 0 0 20px rgb(35, 50, 56, 1);
     margin-bottom: 2rem;
+}
+
+// Contact Form Button
+@mixin contact-btn {
+    @include utility.rounded;
+    margin-top: 1rem;
+    padding: .5em 2em;
+    font-size: utility.$small;
+    font-weight: utility.$semibold;
+    text-transform: uppercase;
+    color: utility.$primary-color;
+    border-style: none;
+    cursor: pointer;
 }

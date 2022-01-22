@@ -30,9 +30,8 @@
   font-weight: 600;
   color: #222222;
   border-style: none;
-  border-radius: 5px;
   cursor: pointer;
-  color: #FFF;
+  color: #FFFFFF;
   background: #A02B98;
   width: 100%;
 }
@@ -63,7 +62,7 @@
   align-items: center;
   gap: 4rem;
   background-color: #222222;
-  color: #FFF;
+  color: #FFFFFF;
   padding: 5rem;
 }
 
@@ -99,7 +98,7 @@
 }
 .footer-links .footer-link-header {
   font-weight: 600;
-  color: #FFF;
+  color: #FFFFFF;
 }
 .footer-links a {
   text-decoration: none;
@@ -107,7 +106,7 @@
 }
 .footer-links a:hover {
   text-decoration: none;
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 .footer-social-container {
@@ -226,7 +225,6 @@
   font-weight: 600;
   color: #222222;
   border-style: none;
-  border-radius: 5px;
   cursor: pointer;
   background: #00FFC2;
 }
@@ -243,9 +241,8 @@
   font-weight: 600;
   color: #222222;
   border-style: none;
-  border-radius: 5px;
   cursor: pointer;
-  background: #FFF;
+  background: #FFFFFF;
 }
 
 .learn-more:hover {
@@ -257,7 +254,7 @@
   margin-top: 10rem;
   width: 100%;
   height: 50rem;
-  background: linear-gradient(#3C535C, rgba(227, 78, 250, 0.3));
+  background: linear-gradient(#3C535C, rgba(227, 78, 250, 0.25));
   justify-self: center;
 }
 
@@ -330,14 +327,14 @@
 
 .logo {
   text-decoration: none;
-  color: #FFF;
+  color: #FFFFFF;
   font-size: 2em;
   font-weight: 600;
   margin-bottom: 0.1em;
 }
 
 .logo:hover {
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 #nav-menu {
@@ -346,7 +343,7 @@
 
 .nav-link {
   text-decoration: none;
-  color: #FFF;
+  color: #FFFFFF;
   font-weight: 400;
   font-size: 1em;
   padding: 1rem;
@@ -464,7 +461,7 @@ h1.Pricing {
   justify-content: space-evenly;
   padding: 3rem 1rem;
   color: #222222;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   width: 30rem;
   border-style: none;
   border-radius: 15px;
@@ -489,7 +486,7 @@ h1.Pricing {
   justify-content: space-evenly;
   padding: 3rem 1rem;
   color: #222222;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   width: 30rem;
   border-style: none;
   border-radius: 15px;
@@ -514,7 +511,7 @@ h1.Pricing {
   justify-content: space-evenly;
   padding: 3rem 1rem;
   color: #222222;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   width: 30rem;
   border-style: none;
   border-radius: 15px;
@@ -582,9 +579,8 @@ li.excluded {
   font-size: 1.5em;
   font-weight: 600;
   text-transform: uppercase;
-  color: #FFF;
+  color: #FFFFFF;
   border-style: none;
-  border-radius: 5px;
   cursor: pointer;
   background: #333333;
 }
@@ -596,9 +592,8 @@ li.excluded {
   font-size: 1.5em;
   font-weight: 600;
   text-transform: uppercase;
-  color: #FFF;
+  color: #FFFFFF;
   border-style: none;
-  border-radius: 5px;
   cursor: pointer;
   background: #4d4d4d;
 }
@@ -610,9 +605,8 @@ li.excluded {
   font-size: 1.5em;
   font-weight: 600;
   text-transform: uppercase;
-  color: #FFF;
+  color: #FFFFFF;
   border-style: none;
-  border-radius: 5px;
   cursor: pointer;
   background: #00A3FF;
 }
@@ -624,9 +618,8 @@ li.excluded {
   font-size: 1.5em;
   font-weight: 600;
   text-transform: uppercase;
-  color: #FFF;
+  color: #FFFFFF;
   border-style: none;
-  border-radius: 5px;
   cursor: pointer;
   background: #0082cc;
 }
@@ -638,9 +631,8 @@ li.excluded {
   font-size: 1.5em;
   font-weight: 600;
   text-transform: uppercase;
-  color: #FFF;
+  color: #FFFFFF;
   border-style: none;
-  border-radius: 5px;
   cursor: pointer;
   background: #A02B98;
 }
@@ -652,9 +644,8 @@ li.excluded {
   font-size: 1.5em;
   font-weight: 600;
   text-transform: uppercase;
-  color: #FFF;
+  color: #FFFFFF;
   border-style: none;
-  border-radius: 5px;
   cursor: pointer;
   background: #c836be;
 }
@@ -692,7 +683,7 @@ li.excluded {
     justify-content: space-evenly;
     padding: 3rem 1rem;
     color: #222222;
-    background-color: #FFF;
+    background-color: #FFFFFF;
     width: 30rem;
     border-style: none;
     border-radius: 15px;
@@ -719,7 +710,7 @@ li.excluded {
     justify-content: space-evenly;
     padding: 3rem 1rem;
     color: #222222;
-    background-color: #FFF;
+    background-color: #FFFFFF;
     width: 30rem;
     border-style: none;
     border-radius: 15px;
@@ -746,7 +737,7 @@ li.excluded {
     justify-content: space-evenly;
     padding: 3rem 1rem;
     color: #222222;
-    background-color: #FFF;
+    background-color: #FFFFFF;
     width: 30rem;
     border-style: none;
     border-radius: 15px;
@@ -783,7 +774,7 @@ li.excluded {
   justify-content: top;
   padding: 1rem;
   color: #333333;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   border-style: none;
   border-radius: 15px;
   box-shadow: 0 0 20px #233238;
@@ -798,7 +789,7 @@ li.excluded {
   justify-content: top;
   padding: 1rem;
   color: #333333;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   border-style: none;
   border-radius: 15px;
   box-shadow: 0 0 20px #233238;
@@ -814,7 +805,7 @@ li.excluded {
   justify-content: top;
   padding: 1rem;
   color: #333333;
-  background-color: #FFF;
+  background-color: #FFFFFF;
   border-style: none;
   border-radius: 15px;
   box-shadow: 0 0 20px #233238;
@@ -874,7 +865,7 @@ li.excluded {
     justify-content: top;
     padding: 1rem;
     color: #333333;
-    background-color: #FFF;
+    background-color: #FFFFFF;
     border-style: none;
     border-radius: 15px;
     box-shadow: 0 0 20px #233238;
@@ -890,7 +881,7 @@ li.excluded {
     justify-content: top;
     padding: 1rem;
     color: #333333;
-    background-color: #FFF;
+    background-color: #FFFFFF;
     border-style: none;
     border-radius: 15px;
     box-shadow: 0 0 20px #233238;
@@ -906,7 +897,7 @@ li.excluded {
     justify-content: top;
     padding: 1rem;
     color: #333333;
-    background-color: #FFF;
+    background-color: #FFFFFF;
     border-style: none;
     border-radius: 15px;
     box-shadow: 0 0 20px #233238;
@@ -965,7 +956,7 @@ li.excluded {
   list-style-type: none;
 }
 .docs-navigation ul li {
-  color: #FFF;
+  color: #FFFFFF;
   list-style: none;
   background-image: url(../img/doc-tick.svg);
   background-position: left, center;
@@ -988,7 +979,7 @@ li.excluded {
 .doc-nav-header {
   font-size: 1.5em;
   font-weight: 400;
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 hr {
@@ -1024,7 +1015,7 @@ hr {
   font-family: "Fira Code", monospace;
   font-size: 400;
   font-weight: 300;
-  color: #FFF;
+  color: #FFFFFF;
   line-height: 2rem;
   background-color: #28373d;
   border: 1px solid #1e292e;
@@ -1098,13 +1089,12 @@ hr {
   }
 }
 .contact-main-container {
-  margin-top: 5rem;
-  padding: 2rem;
+  padding: 5rem 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 50rem;
-  background: linear-gradient(#3C535C, rgba(227, 78, 250, 0.3));
+  background: linear-gradient(#3C535C, rgba(227, 78, 250, 0.25));
 }
 
 .contact-main-header {
@@ -1123,6 +1113,7 @@ hr {
 .contact-direct-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -1132,7 +1123,10 @@ hr {
 }
 .contact-direct-card img {
   width: 100px;
-  opacity: 75%;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(27, 27, 27, 0.25);
+  -webkit-box-shadow: 0 0 20px rgba(27, 27, 27, 0.25);
+  -moz-box-shadow: 0 0 20px rgba(27, 27, 27, 0.25);
 }
 
 .contact-direct-card-text {
@@ -1143,22 +1137,128 @@ hr {
 }
 
 .contact-title {
+  color: #00FFC2;
   font-size: 1.5em;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 .contact-form-container {
-  width: 50rem;
-  height: 25rem;
-  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  width: 100%;
+  padding: 3rem;
+  color: #333333;
+  background-color: #FFFFFF;
   border-style: none;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0 0 20px rgba(27, 27, 27, 0.5);
   -webkit-box-shadow: 0 0 20px rgba(27, 27, 27, 0.5);
   -moz-box-shadow: 0 0 20px rgba(27, 27, 27, 0.5);
 }
 
+.form-header {
+  text-transform: uppercase;
+  color: #666666;
+}
+
+.form-field {
+  margin-top: 2rem;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  gap: 2.5rem;
+}
+
+#firstName, #lastName, #userEmail, #userMessage {
+  width: 100%;
+  border-style: none;
+  border-bottom: 2px solid #666666;
+  color: #333333;
+  font-size: 1em;
+  font-weight: 400;
+  resize: none;
+}
+
+.contact-form-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.form-reset-btn {
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 0.5em 2em;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-style: none;
+  cursor: pointer;
+  background: #666666;
+}
+
+.form-reset-btn:hover {
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 0.5em 2em;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-style: none;
+  cursor: pointer;
+  background: gray;
+}
+
+.form-submit-btn {
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 0.5em 2em;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-style: none;
+  cursor: pointer;
+  background: #A02B98;
+}
+
+.form-submit-btn:hover {
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 0.5em 2em;
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-style: none;
+  cursor: pointer;
+  background: #c836be;
+}
+
+@media (max-width: 1400px) {
+  .contact-main-header {
+    max-width: 90%;
+  }
+
+  .contact-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+    gap: 5rem;
+  }
+
+  .form-field {
+    width: 100%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -1169,7 +1269,7 @@ hr {
 
 body {
   background-color: #3C535C;
-  color: #FFF;
+  color: #FFFFFF;
 }
 
 h1 {
