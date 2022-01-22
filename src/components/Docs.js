@@ -5,7 +5,8 @@ import codetop from '../img/code-top.svg';
 
 const toTop = () => { window.scrollTo({top: 0, behavior: 'smooth' });};
 
- window.onscroll = () => {
+
+window.onscroll = () => {
   var codeTopBtn = document.getElementById("code-top-btn");
   if (window.scrollY) {
     codeTopBtn.style.display = "block";
@@ -17,6 +18,14 @@ const toTop = () => { window.scrollTo({top: 0, behavior: 'smooth' });};
 function Docs() {
   return (
     <div>
+      <div className="docs-header-container">
+          <div className="docs-content-header">
+            <h2 className="docs-content-header-title">Documentation</h2>
+            <span className="docs-content-header-subtext">
+              Here you can find all of the tools you'll need to deploy your web application with Newstack.
+            </span>
+          </div>
+      </div>
       <div className="docs-main-container">
         <button id="code-top-btn" title="Go to Top" onClick={toTop}><img src={codetop} alt="To Top"/></button>
           <div className="docs-navigation">
@@ -58,12 +67,6 @@ function Docs() {
             </div>
           </div>
           <div className="docs-content">
-            <div className="docs-content-header">
-              <h2 className="docs-content-header-title">Welcome to Newstack</h2>
-              <span className="docs-content-header-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
-              </span>
-            </div>
             <hr id="installation"/>
             <div class="docs-content-module">
               <h3 className="docs-content-module-title">Installation</h3>

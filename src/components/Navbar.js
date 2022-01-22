@@ -21,7 +21,7 @@ function Navbar() {
             </div>
             <div id="nav-menu">
                 <div className="nav-links">
-                    <Link to="/docs" className="nav-link">Documentation</Link>
+                    <Link to="/docs" className="nav-link">Docs</Link>
                     <Link to="/blog" className="nav-link">Blog</Link>
                     <Link to="/contact" className="nav-link">Contact</Link>
                     <a className="nav-link" href="https://github.com/mrcanterbury/newstack" target="_blank" rel="noopener noreferrer"><img className="github-link" src={githubnav} alt="View Project on GitHub"/></a>
@@ -30,7 +30,7 @@ function Navbar() {
             <div id="nav-menu-mobile">
                 <div className="nav-links-mobile">
                     <button id="nav-menu-button-close" ></button>
-                    <Link to="/docs" className="nav-link">Documentation</Link>
+                    <Link to="/docs" className="nav-link">Docs</Link>
                     <Link to="/blog" className="nav-link">Blog</Link>
                     <Link to="/contact" className="nav-link">Contact</Link>
                     <a className="nav-link" href="https://github.com/mrcanterbury/newstack" target="_blank" rel="noopener noreferrer"><img className="github-link" src={githubnav} alt="View Project on GitHub"/></a>
