@@ -1,18 +1,101 @@
+@use "utility";
+@use "components";
+
 .blog-main-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     gap: 2rem;
-    width: 100%;
-    padding: 3rem;
+    padding: 1rem;
+    min-height: 100vh;
+}
+
+.blog-main-header {
+    margin: 5rem auto;
 }
 
 .article-list-container {
-    width: auto;
+    // width: 100%;
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(450px, 1fr) );
+    gap: 2rem;
 }
 
-.article-view-container {
-    width: auto;
+.article-display {
+    @include utility.rounded;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around; // Check this again..
+    gap: 1rem;
+    color: utility.$black;
+    background-color: utility.$primary-color;
+    padding: 1rem;
+    box-shadow: 0 0 20px rgba(27, 27, 27, 0.5);
+    -webkit-box-shadow: 0 0 20px rgba(27, 27, 27, .5);
+    -moz-box-shadow: 0 0 20px rgba(27, 27, 27, .5);
+}
+
+.article-display-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-content {
+    padding: 0 .5rem;
+}
+
+.article-title {
+    // text-align: center;
+    padding: 0 .5rem;
+    color: utility.$background;
+}
+
+.article-category {
+    @include utility.rounded;
+    text-align: center;
+    padding: .5rem 1rem;
+    font-size: utility.$medium;
+    font-weight: utility.$semibold;
+    color: utility.$gray;
+    border: 1px solid utility.$light-gray;
+}
+
+.article-date {
+    font-family: utility.$mono;
+    color: utility.$gray;
+    padding: .5rem;
+}
+
+.article-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.article-link {
+    @include utility.rounded;
+    text-transform: uppercase;
+    font-weight: utility.$semibold;
+    color: utility.$primary-color;
+    background-color: utility.$dark-gray;
+    border-style: none;
+    padding: .5em;
+    cursor: pointer;
+}
+
+.article-link:hover {
+    background-color: lighten(utility.$dark-gray, 20%);
+}
+
+.article-thumbnail {
+    
+    padding: 0;
+
+    img {
+        border-radius: 10px;
+        width: 100%;
+        padding: .5rem;
+    }
 }
 
 .new-article-container {

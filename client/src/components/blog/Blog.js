@@ -6,12 +6,10 @@ function Blog() {
       <div>
 
         <div className="blog-main-container">
-          <div className="article-list-container">
+          <div className="blog-main-header">
+            <h2>Newstack Blog</h2>
+          </div>
             <Articles />
-          </div>
-          <div className="article-view-container">
-            <Outlet />
-          </div>
         </div>
 
       </div>

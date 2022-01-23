@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Axios from 'axios';
 
 
@@ -6,20 +6,20 @@ import Axios from 'axios';
 function NewArticle() {
 
   const [id, setID] = useState("");
+  const [image, setImage] = useState("");
   const [title, setTitle] = useState("");
-  const [subtitle, setSubtitle] = useState("");
   const [content, setContent] = useState("");
+  const [category, setCategory] = useState("");
   const [date, setDate] = useState("");
-  const [categories, setCategories] = useState([]);
 
   const createArticle = () => {
     Axios.post("http://localhost:3001/createArticle", {
       id, 
-      title, 
-      subtitle, 
-      content, 
-      date, 
-      categories,
+      image,
+      title,  
+      content,
+      category,
+      date,
     }).then((response) => {
       response = console.log("Article Created Successfully");
     });
@@ -29,11 +29,11 @@ function NewArticle() {
       <div>
         <div className="new-article-container">
             <input type="text" placeholder="ID" onChange={(event) => {setID(event.target.value)}} />
+            <input type="text" placeholder="Image URL..." onChange={(event) => {setImage(event.target.value)}} />
             <input type="text" placeholder="Title.." onChange={(event) => {setTitle(event.target.value)}} />
-            <input type="text" placeholder="Subtitle.." onChange={(event) => {setSubtitle(event.target.value)}} />
-            <input type="text" placeholder="Content.." onChange={(event) => {setContent(event.target.value)}} />
+            <input type="text" placeholder="Article Summary" onChange={(event) => {setContent(event.target.value)}} />
+            <input type="text" placeholder="Category.." onChange={(event) => {setCategory(event.target.value)}} />
             <input type="date"  onChange={(event) => {setDate(event.target.value)}} />
-            <input type="text" placeholder="Categories.." onChange={(event) => {setCategories(event.target.value)}} />
             <button onClick={createArticle}>Create Article</button>
         </div>
       </div>

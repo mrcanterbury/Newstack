@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 
 function Articles() {
-
   const [listArticles, setListOfArticles] = useState([]);
 
     useEffect(() => {
@@ -15,23 +14,29 @@ function Articles() {
 
     return (
       <div>
-
-        <div className="list-article-display">
+        <div className="article-list-container">
           {listArticles.map((article) => {
             return (
-            <div key={article.title}>
-                <h4>{article.title}</h4>
-                <h5>{article.subtitle}</h5>
-                <p>{article.content}</p>
-                <p>{article.date}</p>
-                <h5>{article.categories.reduce((a,b) => (a + ', ' + b))}</h5>
-                <hr />
+            <div className="article-display" key={article.title}>
+              <div className="article-thumbnail">
+                <img src={article.image} alt={article.title}></img>
+              </div>
+              <div className="article-display-header">
+                <h4 className="article-title">{article.title}</h4>
+                <h5 className="article-date">{article.date}</h5>
+              </div>
+                <div className="article-content">
+                  <p>{article.content}</p>
+                </div>
+              <div className="article-category">{article.category}</div>
+              <div className="article-link-container">
+                <Link to={article.title}><button className="article-link">Read More</button></Link>
+              </div>
             </div>
             )
           })}
 
         </div>
-
       </div>
     );
   };

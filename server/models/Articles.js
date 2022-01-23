@@ -5,11 +5,11 @@ const ArticleSchema = new mongoose.Schema({
         type: String,
         required: false,
     },
-    title: {
+    image: {
         type: String,
-        required: true,
+        required: false,
     },
-    subtitle: {
+    title: {
         type: String,
         required: true,
     },
@@ -17,16 +17,12 @@ const ArticleSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    image: {
+    category: {
         type: String,
         required: false,
     },
     date: {
-        type: Date,
-        required: false,
-    },
-    categories: {
-        type: Array,
+        type: String,
         required: false,
     },
 });

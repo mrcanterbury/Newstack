@@ -19,12 +19,11 @@ render(
     <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="docs" element={<Docs />} />
-      <Route path="blog" element={<Blog />}>
-        <Route path=":articleTitle" element={<Article />} />
-        <Route path="new" element={<NewArticle />} />
-      </Route>
-      <Route path="contact" element={<Contact />} />
+      <Route path="/docs" element={<Docs />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/blog/:id" element={<Article />} />
+      <Route path="/blog/new" element={<NewArticle />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
     <Footer />
   </BrowserRouter>,
