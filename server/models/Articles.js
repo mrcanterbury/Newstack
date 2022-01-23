@@ -21,8 +21,8 @@ const ArticleSchema = new mongoose.Schema({
         type: Date,
         required: false,
     },
-    category: {
-        type: String,
+    categories: {
+        type: Array,
         required: false,
     },
 });
