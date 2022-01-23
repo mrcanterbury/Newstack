@@ -14,8 +14,8 @@ const toTop = () => { window.scrollTo({ top: 0, behavior: 'smooth' }); };
 function Footer() {
     return (
         <div>
-            <div class="footer-container">
-                <div class="footer-links-container">
+            <div className="footer-container">
+                <div className="footer-links-container">
                     <div className="top-container">
                         <button className="top-btn" title="Go to Top" onClick={toTop}><img className="icon" src={top} alt="To Top" /></button>
                     </div>
@@ -46,7 +46,7 @@ function Footer() {
                             <li className="footer-link"><Link to="#Footer">Sponsors</Link></li>
                         </ul>
                     </div>
-                    <div class="footer-logo-container">
+                    <div className="footer-logo-container">
                         <div className="footer-logo">
                             <img className="icon" src={logowht} alt="Logo" />
                             <Link to="/" className='logo'>newstack</Link>
@@ -56,24 +56,24 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div class="footer-social-container">
-                    <div class="footer-icon">
+                <div className="footer-social-container">
+                    <div className="footer-icon">
                         <img className="icon" src={githubFooter} alt="Github" />
                     </div>
-                    <div class="footer-icon">
+                    <div className="footer-icon">
                         <img className="icon" src={twitterFooter} alt="Twitter" />
                     </div>
-                    <div class="footer-icon">
+                    <div className="footer-icon">
                         <img className="icon" src={facebookFooter} alt="Facebook" />
                     </div>
-                    <div class="footer-icon">
+                    <div className="footer-icon">
                         <img className="icon" src={googleFooter} alt="Google" />
                     </div>
-                    <div class="footer-icon">
+                    <div className="footer-icon">
                         <img className="icon" src={rssFooter} alt="RSS" />
                     </div>
                 </div>
-                <div class="footer-copy">
+                <div className="footer-copy">
                     <span>Copyright © Newstack 2021</span>
                 </div>
             </div>

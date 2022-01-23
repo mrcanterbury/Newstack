@@ -1,0 +1,22 @@
+.blog-main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 100%;
+    padding: 3rem;
+}
+
+.article-list-container {
+    width: auto;
+}
+
+.article-view-container {
+    width: auto;
+}
+
+.new-article-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
