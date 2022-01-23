@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 const ArticleSchema = new mongoose.Schema({
     id: {
-        type: Number,
-        required: true,
+        type: String,
+        required: false,
     },
     title: {
         type: String,
@@ -13,7 +13,7 @@ const ArticleSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    body: {
+    content: {
         type: String,
         required: true,
     },
