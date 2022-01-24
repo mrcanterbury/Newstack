@@ -21,6 +21,7 @@ function Articles() {
               <div className="article-thumbnail">
                 <img src={article.image} alt={article.title}></img>
               </div>
+              <div className="article-category">{article.category}</div>
               <div className="article-display-header">
                 <h4 className="article-title">{article.title}</h4>
                 <h5 className="article-date">{article.date}</h5>
@@ -28,7 +29,7 @@ function Articles() {
                 <div className="article-content">
                   <p>{article.content}</p>
                 </div>
-              <div className="article-category">{article.category}</div>
+             
               <div className="article-link-container">
                 <Link to={article.title}><button className="article-link">Read More</button></Link>
               </div>

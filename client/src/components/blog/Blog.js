@@ -1,4 +1,5 @@
 import { Link, Outlet } from 'react-router-dom';
+import Featured from './Featured';
 import Articles from './Articles';
 
 function Blog() {
@@ -6,9 +7,9 @@ function Blog() {
       <div>
 
         <div className="blog-main-container">
-          <div className="blog-main-header">
-            <h2>Newstack Blog</h2>
+          <div className="blog-featured">
           </div>
+            <Featured />
             <Articles />
         </div>
 

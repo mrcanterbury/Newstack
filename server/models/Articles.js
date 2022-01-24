@@ -16,6 +16,7 @@ const ArticleSchema = new mongoose.Schema({
     content: {
         type: String,
         required: true,
+        maxLength: 200,
     },
     category: {
         type: String,

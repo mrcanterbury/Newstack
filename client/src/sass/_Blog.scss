@@ -10,12 +10,11 @@
     min-height: 100vh;
 }
 
-.blog-main-header {
+.blog-featured {
     margin: 5rem auto;
 }
 
 .article-list-container {
-    // width: 100%;
     display: grid;
     grid-template-columns: repeat( auto-fill, minmax(450px, 1fr) );
     gap: 2rem;
@@ -42,10 +41,11 @@
 
 .article-content {
     padding: 0 .5rem;
+    font-size: utility.$medium;
+    color: utility.$dark-gray;
 }
 
 .article-title {
-    // text-align: center;
     padding: 0 .5rem;
     color: utility.$background;
 }
@@ -53,8 +53,8 @@
 .article-category {
     @include utility.rounded;
     text-align: center;
-    padding: .5rem 1rem;
-    font-size: utility.$medium;
+    padding: .25rem 1rem;
+    font-size: utility.$small;
     font-weight: utility.$semibold;
     color: utility.$gray;
     border: 1px solid utility.$light-gray;
@@ -63,7 +63,7 @@
 .article-date {
     font-family: utility.$mono;
     color: utility.$gray;
-    padding: .5rem;
+    padding: 0 .5rem;
 }
 
 .article-link-container {
@@ -79,7 +79,7 @@
     color: utility.$primary-color;
     background-color: utility.$dark-gray;
     border-style: none;
-    padding: .5em;
+    padding: 1em;
     cursor: pointer;
 }
 

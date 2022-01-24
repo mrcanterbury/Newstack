@@ -1278,7 +1278,7 @@ hr {
   min-height: 100vh;
 }
 
-.blog-main-header {
+.blog-featured {
   margin: 5rem auto;
 }
 
@@ -1309,6 +1309,8 @@ hr {
 
 .article-content {
   padding: 0 0.5rem;
+  font-size: 1em;
+  color: #333333;
 }
 
 .article-title {
@@ -1319,8 +1321,8 @@ hr {
 .article-category {
   border-radius: 5px;
   text-align: center;
-  padding: 0.5rem 1rem;
-  font-size: 1em;
+  padding: 0.25rem 1rem;
+  font-size: 0.75em;
   font-weight: 600;
   color: #666666;
   border: 1px solid #cccccc;
@@ -1329,7 +1331,7 @@ hr {
 .article-date {
   font-family: "Fira Code", monospace;
   color: #666666;
-  padding: 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .article-link-container {
@@ -1345,7 +1347,7 @@ hr {
   color: #FFFFFF;
   background-color: #333333;
   border-style: none;
-  padding: 0.5em;
+  padding: 1em;
   cursor: pointer;
 }
 
