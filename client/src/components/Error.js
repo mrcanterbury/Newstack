@@ -5,7 +5,7 @@ function Error() {
     return (
       <div>
         <div className="error-container">
-            <h1>Something went wrong.</h1>
+            <h1>Error - 404</h1>
             <div>
                 <button className="sign-up" onClick={() => navigate(-1)}>Go Back</button>
             </div>

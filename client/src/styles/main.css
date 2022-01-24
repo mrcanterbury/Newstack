@@ -1284,7 +1284,7 @@ hr {
 
 .article-list-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 2rem;
   margin-bottom: 5rem;
 }
@@ -1368,7 +1368,9 @@ hr {
 .new-article-container {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 1em;
+  padding: 10rem 15rem;
+  max-width: 70rem;
 }
 
 * {

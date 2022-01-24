@@ -25,7 +25,6 @@ render(
       <Route path="/contact" element={<Contact />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<Error />} />
-      {/* <Navigate from="*" to="/" /> */}
     </Routes>
     <Footer />
   </BrowserRouter>,
