@@ -8,7 +8,7 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb+srv://admin:newstack@nscluster.jusn4.mongodb.net/nsblog?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://admin:newstack@nscluster.jusn4.mongodb.net/nsblog?retryWrites=true&w=majority"); 
 
 app.get("/getArticles", (req, res) => {
     ArticleModel.find({}, (err, result) => {

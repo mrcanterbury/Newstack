@@ -3,7 +3,6 @@ import Axios from 'axios';
 
 function NewArticle() {
 
-  const [id, setID] = useState("");
   const [image, setImage] = useState("");
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
@@ -12,7 +11,6 @@ function NewArticle() {
 
   const createArticle = () => {
     Axios.post("http://localhost:3001/createArticle", {
-      id, 
       image,
       title,  
       content,
@@ -26,7 +24,6 @@ function NewArticle() {
     return (
       <div>
         <div className="new-article-container">
-            <input type="text" placeholder="ID" onChange={(event) => {setID(event.target.value)}} />
             <input type="text" placeholder="Image URL..." onChange={(event) => {setImage(event.target.value)}} />
             <input type="text" placeholder="Title.." onChange={(event) => {setTitle(event.target.value)}} />
             <input type="text" placeholder="Article Summary" onChange={(event) => {setContent(event.target.value)}} />
