@@ -11,7 +11,7 @@ function Pricing() {
                         <h3>Find the perfect option for your team's budget.</h3>
                     </div>
                 </div>
-                <div class="pricing-card-container">
+                <div className="pricing-card-container">
                     <div className="card-basic">
                         <h1 className="basic-header">Basic</h1>
                         <div className="price-display">

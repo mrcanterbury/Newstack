@@ -1,5 +1,5 @@
 import { render } from 'react-dom';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './styles/main.css';
 import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';

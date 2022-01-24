@@ -4,7 +4,7 @@ import action from '../img/action.svg';
 function Action() {
     return (
         <div>
-            <div class="action-container">
+            <div className="action-container">
                 <img className="action-img" src={action} alt="Visit the docs page" />
                 <div className="action-message">
                     <span className="action-text">

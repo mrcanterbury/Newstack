@@ -10,14 +10,14 @@ import test7 from '../img/test-7.png';
 function Testimonials() {
     return (
         <div>
-            <div class="testimonial-container">
-                <div class="testimonial-grid">
-                    <div class="testimonial-card-span-down" id="test1">
-                        <div class="testimonial-card-header">
-                            <div class="test-card-header-img">
+            <div className="testimonial-container">
+                <div className="testimonial-grid">
+                    <div className="testimonial-card-span-down" id="test1">
+                        <div className="testimonial-card-header">
+                            <div className="test-card-header-img">
                                 <img className="testimonial-img" src={test1} alt="Testimonial 1" />
                             </div>
-                            <div class="test-card-header-text">
+                            <div className="test-card-header-text">
                                 <div className="test-card-title">
                                     <span>Brad Garlicbread</span>
                                 </div>
@@ -35,12 +35,12 @@ function Testimonials() {
                             </p>
                         </div>
                     </div>
-                    <div class="testimonial-card" id="test2">
-                        <div class="testimonial-card-header">
-                            <div class="test-card-header-img">
+                    <div className="testimonial-card" id="test2">
+                        <div className="testimonial-card-header">
+                            <div className="test-card-header-img">
                                 <img className="testimonial-img" src={test2} alt="Testimonial 2" />
                             </div>
-                            <div class="test-card-header-text">
+                            <div className="test-card-header-text">
                                 <div className="test-card-title">
                                     <span>Bruce Wayne</span>
                                 </div>
@@ -53,12 +53,12 @@ function Testimonials() {
                             <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.“</p>
                         </div>
                     </div>
-                    <div class="testimonial-card" id="test3">
-                        <div class="testimonial-card-header">
-                            <div class="test-card-header-img">
+                    <div className="testimonial-card" id="test3">
+                        <div className="testimonial-card-header">
+                            <div className="test-card-header-img">
                                 <img className="testimonial-img" src={test3} alt="Testimonial 3" />
                             </div>
-                            <div class="test-card-header-text">
+                            <div className="test-card-header-text">
                                 <div className="test-card-title">
                                     <span>Sarah Morris</span>
                                 </div>
@@ -71,12 +71,12 @@ function Testimonials() {
                             <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.“</p>
                         </div>
                     </div>
-                    <div class="testimonial-card-span-right" id="test4">
-                        <div class="testimonial-card-header">
-                            <div class="test-card-header-img">
+                    <div className="testimonial-card-span-right" id="test4">
+                        <div className="testimonial-card-header">
+                            <div className="test-card-header-img">
                                 <img className="testimonial-img" src={test4} alt="Testimonial 4" />
                             </div>
-                            <div class="test-card-header-text">
+                            <div className="test-card-header-text">
                                 <div className="test-card-title">
                                     <span>Jennifer Lawrence</span>
                                 </div>
@@ -92,12 +92,12 @@ function Testimonials() {
                             </p>
                         </div>
                     </div>
-                    <div class="testimonial-card" id="test5">
-                        <div class="testimonial-card-header">
-                            <div class="test-card-header-img">
+                    <div className="testimonial-card" id="test5">
+                        <div className="testimonial-card-header">
+                            <div className="test-card-header-img">
                                 <img className="testimonial-img" src={test5} alt="Testimonial 5" />
                             </div>
-                            <div class="test-card-header-text">
+                            <div className="test-card-header-text">
                                 <div className="test-card-title">
                                     <span>Stan Therman</span>
                                 </div>
@@ -110,12 +110,12 @@ function Testimonials() {
                             <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.“</p>
                         </div>
                     </div>
-                    <div class="testimonial-card" id="test6">
-                        <div class="testimonial-card-header">
-                            <div class="test-card-header-img">
+                    <div className="testimonial-card" id="test6">
+                        <div className="testimonial-card-header">
+                            <div className="test-card-header-img">
                                 <img className="testimonial-img" src={test6} alt="Testimonial 6" />
                             </div>
-                            <div class="test-card-header-text">
+                            <div className="test-card-header-text">
                                 <div className="test-card-title">
                                     <span>Steven Roberts</span>
                                 </div>
@@ -128,12 +128,12 @@ function Testimonials() {
                             <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.“</p>
                         </div>
                     </div>
-                    <div class="testimonial-card" id="test7">
-                        <div class="testimonial-card-header">
-                            <div class="test-card-header-img">
+                    <div className="testimonial-card" id="test7">
+                        <div className="testimonial-card-header">
+                            <div className="test-card-header-img">
                                 <img className="testimonial-img" src={test7} alt="Testimonial 7" />
                             </div>
-                            <div class="test-card-header-text">
+                            <div className="test-card-header-text">
                                 <div className="test-card-title">
                                     <span>Cindy Williams</span>
                                 </div>
