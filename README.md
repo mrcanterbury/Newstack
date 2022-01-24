@@ -5,3 +5,12 @@ Newstack is created with React rendering the frontend. The backend is Express & 
 
 # WIP
 
+Layout designed in Figma and created with SASS.
+
+
+
+Todo:
+
+Create message popup after hitting submit on contact form.
+Make docs left navigation scroll with the page when in fullscreen.
+Make the docs navigation a scrolling dropdown menu in mobile.

@@ -23,7 +23,6 @@ render(
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/new" element={<NewArticle />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<Error />} />
     </Routes>
     <Footer />

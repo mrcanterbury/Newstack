@@ -19,7 +19,7 @@ function NewArticle() {
       category,
       date,
     }).then((response) => {
-      response = console.log("Article Created Successfully");
+      response = alert("Article Created Successfully");
     });
   };
 
