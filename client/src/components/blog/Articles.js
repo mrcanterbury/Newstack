@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import Axios from 'axios';
-import { Link } from 'react-router-dom';
 
 
 function Articles() {
@@ -18,7 +17,7 @@ function Articles() {
           {listArticles.map((article) => {
             return (
             <div className="article-display" key={article.title}>
-              <div className="article-thumbnail">
+              <div className="article-image">
                 <img src={article.image} alt={article.title}></img>
               </div>
               <div className="article-category">{article.category}</div>
@@ -29,14 +28,12 @@ function Articles() {
                 <div className="article-content">
                   <p>{article.content}</p>
                 </div>
-             
               <div className="article-link-container">
-                <Link to={article.title}><button className="article-link">Read More</button></Link>
+                <button className="article-link">Read More</button>
               </div>
             </div>
             )
           })}
-
         </div>
       </div>
     );

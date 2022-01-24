@@ -1,18 +1,15 @@
-import { Link, Outlet } from 'react-router-dom';
-import Featured from './Featured';
+import { Link } from 'react-router-dom';
 import Articles from './Articles';
 
 function Blog() {
     return (
       <div>
-
         <div className="blog-main-container">
-          <div className="blog-featured">
+          <div className="blog-header-container">
+            <h1>Blog</h1>
           </div>
-            <Featured />
             <Articles />
         </div>
-
       </div>
     );
   };
