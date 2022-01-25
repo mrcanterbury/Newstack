@@ -24,8 +24,15 @@ body {
 }
 
 h1 {
-    font-size: utility.$xxxl;
+    font-size: utility.$xxl;
     font-weight: utility.$bold;
+    color: utility.$primary-color;
+}
+
+h1.pricing {
+    font-size: utility.$xxl;
+    font-weight: utility.$bold;
+    color: utility.$background;
 }
 
 h2 {

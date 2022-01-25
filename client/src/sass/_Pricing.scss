@@ -14,12 +14,6 @@
     text-align: center;
 }
 
-h1.pricing {
-    font-size: utility.$xxxl;
-    font-weight: utility.$bold;
-    color: utility.$background;
-}
-
 .pricing-card-container {
     margin-top: 5rem;
     display: flex;
@@ -65,7 +59,7 @@ h1.pricing {
 
 h1.price-tag-lg {
     color: utility.$gray;
-    font-size: utility.$xxxl;
+    font-size: utility.$xxl;
 }
 
 h5.price-tag-sm {
@@ -76,7 +70,6 @@ h5.price-tag-sm {
 .fineprint {
     margin-top: 2rem;
     font-size: utility.$small;
-    font-weight: utility.$semibold;
     color: utility.$gray;
 }
 
@@ -85,7 +78,7 @@ ul {
 }
 
 li {
-    font-size: utility.$large;
+    font-size: utility.$medium;
     color: utility.$gray;
     padding: .25em;
 }
@@ -149,7 +142,7 @@ li.excluded {
         align-items: center;
 
         li {
-            font-size: utility.$medium;
+            font-size: utility.$small;
             color: utility.$gray;
             padding: .5em;
         }

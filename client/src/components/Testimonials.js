@@ -19,10 +19,10 @@ function Testimonials() {
                             </div>
                             <div className="test-card-header-text">
                                 <div className="test-card-title">
-                                    <span>Brad Garlicbread</span>
+                                    <span className="title">Brad Garlicbread</span>
                                 </div>
                                 <div className="test-card-subtitle">
-                                    <span>CEO of Some Company</span>
+                                    <span className="subtitle">CEO of Some Company</span>
                                 </div>
                             </div>
                         </div>

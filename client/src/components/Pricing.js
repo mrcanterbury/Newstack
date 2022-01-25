@@ -7,9 +7,6 @@ function Pricing() {
                     <div>
                         <h1 className="pricing">Choose Your Plan</h1>
                     </div>
-                    <div>
-                        <h3>Find the perfect option for your team's budget.</h3>
-                    </div>
                 </div>
                 <div className="pricing-card-container">
                     <div className="card-basic">

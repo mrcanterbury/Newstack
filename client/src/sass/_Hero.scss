@@ -17,10 +17,13 @@
 }
 
 .hero-title {
+    font-size: utility.$xxl;
+    font-weight: utility.$bold;
     max-width: 70rem;
 }
 
 .hero-subtitle {
+    font-size: utility.$medium;
     max-width: 50rem;
 }
 
@@ -83,15 +86,16 @@
     }
 
     .hero-title {
-        font-size: utility.$small;
+        font-size: utility.$xl;
+        font-weight: utility.$bold;
         max-width: 90%;
     }
     
     .hero-subtitle {
-        font-size: utility.$regular;
+        font-size: utility.$small;
         max-width: 100%;
     }
-    
+
     .hero-button-container {
         gap: 1rem;
     }
