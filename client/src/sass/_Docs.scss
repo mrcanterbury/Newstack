@@ -14,7 +14,7 @@
     padding:0;
 
     img {
-        width: 60px;
+        max-width: 80px;
     }
 }
 
@@ -23,17 +23,13 @@
     max-width: 50%;
 }
 
-.docs-content-header-title {
-    font-size: utility.$xxl;
+.docs-content-header {
+    font-size: utility.$xl;
     font-weight: utility.$semibold;
 }
 
 .docs-content-first {
     text-align: center;
-}
-
-.docs-content-header-subtext {
-    color: utility.$light-gray;
 }
 
 .docs-main-container {
@@ -179,8 +175,8 @@ hr {
         max-width: 100%;
     }
 
-    .docs-content-header-title {
-        font-size: 2rem;
+    .docs-content-header {
+        font-size: utility.$large;
     }
 
     .docs-main-container {

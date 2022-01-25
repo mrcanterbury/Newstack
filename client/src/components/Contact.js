@@ -11,9 +11,7 @@ function Contact() {
     <div>
       <div className="contact-main-container">
         <div className="contact-main-header">
-          <h1>Contact Us</h1>
-          <span className="docs-content-header-subtext">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Quo mollitia tempore ducimus aliquam.</span>
+          <span>Contact Us</span>
         </div>
         <div className="contact-content-container">
           <div className="contact-direct-container">

@@ -14,6 +14,8 @@
 .contact-main-header {
     max-width: 40%;
     text-align: center;
+    font-size: utility.$xxl;
+    font-weight: utility.$bold;
 }
 
 .contact-content-container {
@@ -53,7 +55,7 @@
 
 .contact-title {
     color: utility.$secondary-color;
-    font-size: utility.$large;
+    font-size: utility.$medium;
     font-weight: utility.$semibold;
     text-transform: uppercase;
 }
@@ -92,8 +94,7 @@
     border-style: none;
     border-bottom: 1px solid utility.$gray;
     color: utility.$dark-gray;
-    font-size: utility.$medium;
-    font-weight: utility.$thin;
+    font-size: utility.$small;
     resize: none;
     padding: .5em;
 }

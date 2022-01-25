@@ -51,12 +51,12 @@ function Docs() {
               <img src={action} alt="Documentation" />
         </div>
           <div className="docs-content-header">
-            <h2 className="docs-content-header-title">Getting Started</h2>
+            <span>Getting Started</span>
           </div>
       </div>
           <div className="docs-content-module">
               <span className="docs-content-first">
-              Copy the installation package and initialize in the terminal.
+              Copy the installation package and launch in the terminal.
               </span>
             </div>
             <hr id="installation"/>
