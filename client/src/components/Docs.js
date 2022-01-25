@@ -5,20 +5,11 @@ import codetop from '../img/code-top.svg';
 
 const toTop = () => { window.scrollTo({top: 0, behavior: 'smooth' });};
 
-// window.onscroll = () => {
-//   var codeTopBtn = document.querySelector("code-top-btn");
-//   if (window.scrollY) {
-//     codeTopBtn.style.display = "block";
-//   } else {
-//     codeTopBtn.style.display = "none";
-//   };
-// };
-
 function Docs() {
   return (
     <div>
       <div className="docs-main-container">
-        <button id="code-top-btn" title="Go to Top" onClick={toTop}><img src={codetop} alt="To Top"/></button>
+      <button id="code-top-btn" title="Go to Top" onClick={toTop}><img src={codetop} alt="To Top"/></button>
           <div className="docs-navigation">
             <div>
               <ul>
@@ -117,7 +108,7 @@ function Docs() {
                 </div>
               </div>
             </div>
-            <hr id="testing"/>
+            <hr id="testing"/> 
             <div className="docs-content-module">
               <h3 className="docs-content-module-title">4. Testing</h3>
               <span className="docs-content-header-subtext">

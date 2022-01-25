@@ -986,8 +986,6 @@ li.excluded {
 
 .doc-nav-header {
   font-size: 1.5em;
-  font-weight: 400;
-  color: #FFFFFF;
 }
 
 hr {
@@ -1063,7 +1061,7 @@ hr {
   cursor: pointer;
 }
 #code-top-btn img {
-  opacity: 100%;
+  opacity: 75%;
 }
 
 @media (max-width: 810px) {
@@ -1338,7 +1336,7 @@ hr {
 .article-link-container {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .article-link {

@@ -14,6 +14,7 @@ window.addEventListener('mouseup', function(e) {
 
 function Navbar() {
     return (
+        <nav>
         <div className="navbar">
             <div className="logo-set">
                 <img className="icon" src={logo} alt="Logo"/>
@@ -27,6 +28,7 @@ function Navbar() {
                     <a className="nav-link" href="https://github.com/mrcanterbury/newstack" target="_blank" rel="noopener noreferrer"><img className="github-link" src={githubnav} alt="View Project on GitHub"/></a>
                 </div>
             </div>
+            
             <div id="nav-menu-mobile">
                 <div className="nav-links-mobile">
                     <button id="nav-menu-button-close" ></button>
@@ -38,6 +40,7 @@ function Navbar() {
             </div>
             <button id="nav-menu-button-open" title="Mobile Menu" onClick={navOpen}><img className="icon" src={mobilemenu} alt="Mobile Menu"/></button>
         </div>
+        </nav>
     );
 };
 

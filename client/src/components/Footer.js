@@ -8,7 +8,6 @@ import googleFooter from '../img/google-footer.svg';
 import rssFooter from '../img/rss-footer.svg';
 import top from '../img/top.svg';
 
-
 const toTop = () => { window.scrollTo({ top: 0, behavior: 'smooth' }); };
 
 function Footer() {
