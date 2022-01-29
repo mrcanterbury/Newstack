@@ -25,7 +25,7 @@ function Docs() {
       </div>
 
       <div className="docs-main-container">
-        <button id="code-top-btn" title="Go to Top" onClick={toTop}><img src={codetop} alt="To Top"/></button>
+        <button id="code-top-btn" title="To Top" onClick={toTop}><img src={codetop} alt="To Top"/></button>
 
           <div className="docs-navigation">
             <ul>

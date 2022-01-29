@@ -324,7 +324,7 @@
   flex-direction: row;
   align-items: center;
   gap: 0.5em;
-  padding: 0 2rem;
+  padding: 0 5rem;
 }
 
 .logo {
@@ -375,7 +375,7 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  padding: 0 2rem;
+  padding: 0 5rem;
 }
 
 .nav-links {
@@ -410,6 +410,7 @@
 @media (max-width: 810px) {
   .logo-set {
     margin-left: 0.5rem;
+    padding: 0 1.5rem;
     align-self: center;
   }
 
@@ -420,7 +421,7 @@
     left: -100%;
     flex-direction: column;
     background-color: #28373d;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
     width: 100%;
     transition: 0.5s;
     opacity: 0%;
@@ -435,7 +436,7 @@
   }
 
   .nav-item {
-    margin: 1.5rem -1rem;
+    margin: 1.5rem 0;
   }
 
   .hamburger {
@@ -976,7 +977,6 @@ li.excluded {
   align-items: center;
   padding: 1rem 3rem;
   border-style: none;
-  height: fit-content;
 }
 .docs-navigation ul li {
   color: #FFFFFF;
@@ -1018,30 +1018,27 @@ li.excluded {
   text-align: center;
   border: none;
   outline: none;
-  transition: 0.3s;
   width: 100%;
 }
 
 .doc-accordion:hover {
   background-color: #28373d;
+  transition: 0.2s ease-in-out;
 }
 
 .doc-accordion.active {
   background-color: #28373d;
   background-image: url(../img/docs-minus.svg);
-  transition: 0.3s;
 }
 
 .doc-dropdown {
-  height: 0%;
   display: block;
-  overflow: hidden;
+  height: 0%;
   padding: 1rem;
-  transition: 0.5s ease-in-out;
 }
 
 hr {
-  color: #3C535C;
+  color: #141b1e;
   border: none;
   margin: 1rem;
 }
