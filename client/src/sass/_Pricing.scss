@@ -3,6 +3,7 @@
 
 
 .pricing-container {
+    padding-bottom: 3rem;
     background-color: utility.$offwhite;
     display: flex;
     flex-direction: column;
@@ -15,11 +16,10 @@
 }
 
 .pricing-card-container {
-    margin-top: 5rem;
     display: flex;
     flex-direction: row;
     gap: 3rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .card-basic {
@@ -50,11 +50,10 @@
 }
 
 .price-display {
-    margin-top: 1em;
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    gap: .5em;
+    gap: .5rem;
 }
 
 h1.price-tag-lg {
@@ -139,7 +138,6 @@ li.excluded {
         margin-top: 5rem;
         display: flex;
         flex-direction: column;
-        gap: .5rem;
         align-items: center;
 
         li {

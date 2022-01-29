@@ -29,14 +29,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     padding: 3rem 1rem;
     color: utility.$black;
     background-color: utility.$primary-color;
     width: 30rem;
     border-style: none;
     border-radius: 15px;
-    margin-bottom: 5rem;
     box-shadow: 0 0 20px rgb(204, 204, 204, .5);
     -webkit-box-shadow: 0 0 20px rgb(204, 204, 204, .5);
     -moz-box-shadow: 0 0 20px rgb(204, 204, 204, .5);
