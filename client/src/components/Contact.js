@@ -1,3 +1,5 @@
+import React, { Component } from 'react';
+
 import email from '../img/contact-email.svg';
 import phone from '../img/contact-phone.svg';
 import address from '../img/contact-address.svg';
@@ -7,6 +9,11 @@ const clearForm = () => {
 };
 
 function Contact() {
+
+  function notReal() {
+    alert('Sorry, this is not a real form!')
+  }
+  
   return (
     <div>
       <div className="contact-main-container">
@@ -80,7 +87,7 @@ function Contact() {
                 <button className="form-reset-btn" onClick={clearForm}>Reset</button>
               </div>
               <div>
-                <button className="form-submit-btn">Send</button>
+                <button className="form-submit-btn" onClick={notReal}>Send</button>
               </div>
             </div>
           </div>
