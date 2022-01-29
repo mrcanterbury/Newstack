@@ -11,14 +11,29 @@
 }
 
 .blog-header-container {
+    background-color: utility.$black;
+    margin-top: 5rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.headline {
     font-size: utility.$xxl;
     font-weight: utility.$bold;
-    margin: 3rem auto;
+}
+
+.runner {
+    font-size: utility.$medium;
+    font-weight: utility.$thin;
 }
 
 .article-list-container {
     display: grid;
-    grid-template-columns: repeat( auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat( auto-fill, minmax(300px, 1fr));
     gap: 3rem;
     margin-bottom: 5rem;
 }
@@ -77,6 +92,7 @@
 .article-link {
     @include utility.rounded;
     text-transform: uppercase;
+    font-size: utility.$smaller;
     font-weight: utility.$semibold;
     color: utility.$primary-color;
     background-color: utility.$dark-gray;

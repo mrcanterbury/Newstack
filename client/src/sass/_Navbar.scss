@@ -3,20 +3,18 @@
 
 .navbar {
     margin-top: 3rem;
-    width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
+    align-items: flex-end;
     height: 50px;
-    // overflow: hidden;
 }
 
 .logo-set {
-    margin-left: 2rem;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     gap:.5em;
+    padding: 0 2rem;
 }
 
 .logo {
@@ -24,26 +22,64 @@
     color: utility.$primary-color;
     font-size: utility.$logo;
     font-weight: utility.$semibold;
-    margin-bottom: .1em;
+    padding-bottom: .1em;
 }
 
 .logo:hover {
     color: utility.$primary-color;
 }
 
-#nav-menu {
-    margin-right: 2rem;
+.hamburger {
+    display: none;
 }
 
-.nav-link {
+.bar {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background-color: utility.$primary-color;
+}
+
+#menu-button {
+    height: 24px;
+    align-self: center;
+    background: transparent;
+    border: none;
+    padding:  0 3rem;
+    cursor: pointer;
+}
+
+#menu-button:hover {
+    background: transparent;
+}
+
+#menu-button:focus {
+    background: transparent;
+    outline: none;
+}
+
+.navmenu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.nav-links {
+   list-style: none;
+}
+
+.nav-item {
     text-decoration: none;
     color: utility.$primary-color;
     font-weight: utility.$regular;
-    font-size: utility.$medium;
-    padding: 1rem;
+    font-size: utility.$small;
 }
 
-a:hover {
+.nav-item:hover {
     color: utility.$secondary-color;
 }
 
@@ -53,24 +89,12 @@ a:hover {
 
 .github-link {
     width: 24px;
-    margin-bottom: -.15em;
+    margin-bottom: -.25em;
     opacity: 100%;
 }
 
 .github-link:hover {
    opacity: 50%;
-}
-
-#nav-menu-button-open {
-    display: none;
-}
-
-#nav-menu-mobile {
-    display: none;
-}
-
-.nav-links-mobile {
-    display: none;
 }
 
 @media (max-width:810px) {
@@ -80,51 +104,52 @@ a:hover {
         align-self: center;
     }
 
-    #nav-menu {
-        display: none;
-    }
-
-    #nav-menu-button-open {
-        margin-top: .5em;
-        display: block;
-        // display: none;
-        width: 32px;
-        height: 32px;
-        background-color: utility.$background;
-        // background-image: url(../img/mobile-open.svg);
-        // background-size: 100%;
-        // background-repeat: no-repeat;
-        border:none;
-        cursor: pointer;
-    }
-
-    #nav-menu-button-close {
-        display: block;
-        width: 40px;
-        height: 40px;
+    .navmenu {
+        height: 100vh;
+        position: fixed;
+        top: 5rem;
+        left: -100%;
+        flex-direction: column;
         background-color: darken(utility.$background, 10%);
-        background-image: url(../img/mobile-close.svg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        border:none;
-        cursor: pointer;
-        align-self: flex-end;
+        padding: 1rem 4rem;
+        width: 100%;
+        transition: .5s;
+        opacity: 0%;
+
+    }
+
+    .navmenu.active {
+        position: fixed;
+        top: 5rem;
+        left: 0;
+        opacity: 100%;
+        z-index: 3;
     }
     
-    #nav-menu-mobile {
-        display: none; // display:block;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 200px;
-        padding: 1rem 1rem;
-        background-color: darken(utility.$background, 10%);
+    .nav-item {
+        margin: 1.5rem -1rem;
     }
 
-    .nav-links-mobile {
-        display:flex;
-        flex-direction: column;
-        position: relative;
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+ 
+    .hamburger.active .bar:nth-child(2) {
+        transform: translate(4px);
+        opacity: 0;
+    }
+   
+    .hamburger.active .bar:nth-child(1) {
+        transform-origin: center;
+        transform: rotate(45deg) translate(4px, 4px);
+        -webkit-transform: rotate(45deg) translate(4px, 4px);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform-origin: center;
+        transform: rotate(-45deg) translate(6px, -8px);
+        -webkit-transform: rotate(-45deg) translate(6px, -8px);
     }
     
 }

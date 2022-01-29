@@ -1,5 +1,7 @@
-
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../img/logo.svg';
+import githubnav from '../img/github-nav.svg';
 import logowht from '../img/logo_wht.svg';
 import githubFooter from '../img/github-footer.svg';
 import twitterFooter from '../img/twitter-footer.svg';
@@ -8,12 +10,45 @@ import googleFooter from '../img/google-footer.svg';
 import rssFooter from '../img/rss-footer.svg';
 import top from '../img/top.svg';
 
-const toTop = () => { window.scrollTo({ top: 0, behavior: 'smooth' }); };
+const Layout = ({children}) => {
 
-function Footer() {
+    const [isOpen, setIsOpen] = useState(false);
+    const openMenu = () => setIsOpen(!isOpen);
+    const closeMenu = () => setIsOpen(false);
+
+    const toTop = () => { window.scrollTo({ top: 0, behavior: 'smooth' }); };
+
     return (
-        <div>
-            <div className="footer-container">
+        <>
+        <nav className="navbar">
+            <div className="logo-set">
+                <img className="icon" src={logo} alt="Logo"/>
+                <Link to="/" onClick={closeMenu} className="logo">newstack</Link>
+            </div>
+                <ul className={isOpen === false ? "navmenu" : "navmenu" + ' ' + "active"}>
+                    <li className="nav-links">
+                        <Link to="/docs" onClick={closeMenu} className="nav-item">Docs</Link>
+                    </li>
+                    <li className="nav-links">
+                        <Link to="/blog" onClick={closeMenu} className="nav-item">Blog</Link>
+                    </li>
+                    <li className="nav-links">
+                        <Link to="/contact" onClick={closeMenu} className="nav-item">Contact</Link>
+                    </li>
+                    <li className="nav-links">
+                        <a className="nav-item" onClick={closeMenu} href="https://github.com/mrcanterbury/newstack" target="_blank" rel="noopener noreferrer"><img className="github-link" src={githubnav} alt="View Project on GitHub"/></a>
+                    </li>
+                </ul>
+            <button id="menu-button" className={isOpen === false ? "hamburger" : "hamburger" + ' ' + "active" } onClick={openMenu}>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+            </button>
+        </nav>
+
+        <main>{children}</main>
+
+        <div className="footer-container">
                 <div className="footer-links-container">
                     <div className="top-container">
                         <button className="top-btn" title="Go to Top" onClick={toTop}><img className="icon" src={top} alt="To Top" /></button>
@@ -76,8 +111,8 @@ function Footer() {
                     <span>Copyright © Newstack 2021</span>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
-export default Footer;
+export default Layout;
