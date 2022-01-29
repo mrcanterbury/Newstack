@@ -1116,16 +1116,18 @@ hr {
   }
 }
 .contact-main-container {
-  padding: 5rem 2rem;
+  padding: 5rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   background-color: #3C535C;
   min-height: 100vh;
 }
 
 .contact-main-header {
+  margin-top: 5rem;
   max-width: 40%;
   text-align: center;
   font-size: 64px;
@@ -1274,6 +1276,7 @@ hr {
 @media (max-width: 1400px) {
   .contact-main-header {
     max-width: 90%;
+    font-size: 64px;
   }
 
   .contact-content-container {

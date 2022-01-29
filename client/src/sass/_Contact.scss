@@ -2,16 +2,18 @@
 @use "components";
 
 .contact-main-container {
-    padding: 5rem 2rem;
+    padding: 5rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
     background-color:utility.$background;
     min-height: 100vh;
 }
 
 .contact-main-header {
+    margin-top: 5rem;
     max-width: 40%;
     text-align: center;
     font-size: utility.$xxl;
@@ -130,6 +132,7 @@
 
     .contact-main-header {
         max-width: 90%;
+        font-size: utility.$xxl;
     }    
 
     .contact-content-container {
